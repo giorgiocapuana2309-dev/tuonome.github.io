@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - Nome Cognome</title>
+  <meta name="description" content="Portfolio personale di Nome Cognome: progetti ingegneristici e di gestione/finance.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">●</span>
+        <a href="#" class="brand-name">Nome Cognome</a>
+      </div>
+      <nav class="nav">
+        <a href="#about">Chi sono</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Ciao! Sono <span class="hl">Nome Cognome</span>.</h1>
+        <p class="lead">Laureata in <strong>Strategic Communication</strong> con focus su sostenibilità e background in <strong>Scienze della Comunicazione</strong>. Mi occupo di progetti tra <strong>ingegneria</strong> e <strong>gestione/finance</strong>, con interesse per IoT, reportistica di sostenibilità (GRI/CSRD) e analisi dati.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#portfolio">Vedi i progetti</a>
+          <a class="btn ghost" href="#contatti">Contattami</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>Chi sono</h2>
+          <p>Breve bio: racconta chi sei, cosa studi/assi, i tuoi interessi professionali. Evidenzia 3–4 competenze chiave (es. analisi dati, gestione progetti, sostenibilità, comunicazione tecnica).</p>
+          <ul class="badges">
+            <li>GRI / CSRD</li>
+            <li>GHG Accounting</li>
+            <li>HVDC market analysis</li>
+            <li>IoT / OMI</li>
+          </ul>
+        </div>
+        <aside class="card">
+          <h3>Formazione</h3>
+          <ul class="timeline">
+            <li>
+              <span class="t-title">M.Sc. Strategic Communication</span>
+              <span class="t-meta">Focus: sostenibilità – 2023–2025</span>
+            </li>
+            <li>
+              <span class="t-title">B.Sc. Scienze della Comunicazione</span>
+              <span class="t-meta">2019–2022</span>
+            </li>
+            <li>
+              <span class="t-title">Corsi / Certificazioni</span>
+              <span class="t-meta">GRI Standards, ISO 14064, B Corp basics</span>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Portfolio</h2>
+          <div class="filters" role="tablist" aria-label="Filtra i progetti">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Tutti</button>
+            <button class="filter-btn" data-filter="ingegneria" role="tab" aria-selected="false">Ingegneria</button>
+            <button class="filter-btn" data-filter="gestione" role="tab" aria-selected="false">Gestione/Finance</button>
+          </div>
+        </div>
+
+        <div class="grid" id="projects">
+          <!-- Esempi di card progetto (sostituisci con i tuoi) -->
+          <article class="card project" data-tags="ingegneria">
+            <img src="img/placeholder_1.svg" alt="Anteprima progetto ingegneria 1">
+            <div class="card-body">
+              <h3>Progetto Ingegneristico A</h3>
+              <p>Analisi e prototipazione di un modulo IoT (OMI) per il monitoraggio ambientale.</p>
+              <div class="meta">
+                <span>IoT</span><span>Prototyping</span>
+              </div>
+              <a class="btn small" href="#" aria-label="Apri dettaglio Progetto Ingegneristico A">Dettagli</a>
+            </div>
+          </article>
+
+          <article class="card project" data-tags="ingegneria">
+            <img src="img/placeholder_2.svg" alt="Anteprima progetto ingegneria 2">
+            <div class="card-body">
+              <h3>Progetto Ingegneristico B</h3>
+              <p>Analisi profili alari con parametrizzazione CST: camber, spessore, bordo d’attacco.</p>
+              <div class="meta">
+                <span>Aerodinamica</span><span>CST</span>
+              </div>
+              <a class="btn small" href="#" aria-label="Apri dettaglio Progetto Ingegneristico B">Dettagli</a>
+            </div>
+          </article>
+
+          <article class="card project" data-tags="gestione">
+            <img src="img/placeholder_3.svg" alt="Anteprima progetto gestione 1">
+            <div class="card-body">
+              <h3>Market Selection HVDC</h3>
+              <p>Comparativa paesi e priorità per l’espansione internazionale nel settore consulenza HVDC.</p>
+              <div class="meta">
+                <span>Strategy</span><span>Market Analysis</span>
+              </div>
+              <a class="btn small" href="#" aria-label="Apri dettaglio Market Selection HVDC">Dettagli</a>
+            </div>
+          </article>
+
+          <article class="card project" data-tags="gestione">
+            <img src="img/placeholder_4.svg" alt="Anteprima progetto gestione 2">
+            <div class="card-body">
+              <h3>Report di Sostenibilità</h3>
+              <p>Redazione framework GRI/CSRD, calcolo GHG e roadmap miglioramento KPI ESG.</p>
+              <div class="meta">
+                <span>GRI</span><span>CSRD</span><span>GHG</span>
+              </div>
+              <a class="btn small" href="#" aria-label="Apri dettaglio Report di Sostenibilità">Dettagli</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contatti" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>Contatti</h2>
+          <p>Per collaborazioni o informazioni:</p>
+          <ul class="contact-list">
+            <li><a href="mailto:tuonome@email.com">tuonome@email.com</a></li>
+            <li><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+        <form class="card" onsubmit="event.preventDefault(); alert('Grazie! Il form è solo dimostrativo su GitHub Pages.');">
+          <label class="form-label" for="nome">Nome</label>
+          <input id="nome" class="input" type="text" placeholder="Il tuo nome" required>
+          <label class="form-label" for="email">Email</label>
+          <input id="email" class="input" type="email" placeholder="La tua email" required>
+          <label class="form-label" for="msg">Messaggio</label>
+          <textarea id="msg" class="input" rows="4" placeholder="Scrivi qui..." required></textarea>
+          <button class="btn primary" type="submit">Invia</button>
+          <p class="form-note">Su hosting statico gratuito il form non invia email. In futuro puoi usare servizi come Formspree o Netlify Forms.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Nome Cognome — Tutti i diritti riservati</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
