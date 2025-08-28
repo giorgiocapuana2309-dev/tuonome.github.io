@@ -3,41 +3,34 @@ const I18N = {
   it: {
     "site.title": "Portfolio - Giorgio Capuana",
     "site.description": "Portfolio personale di Giorgio Capuana: progetti ingegneristici e di gestione/finance.",
-
     "nav.about": "Chi sono",
     "nav.portfolio": "Portfolio",
     "nav.languages": "Lingue",
     "nav.contact": "Contatti",
-
     "lang.select_label": "Scegli lingua",
-
     "hero.hi": "Ciao! Sono <span class='hl'>Giorgio Capuana</span>.",
     "hero.lead": "Ingegnere gestionale con una formazione internazionale tra <strong>Politecnico di Milano</strong> e <strong>Universidad Politécnica de Valencia</strong>. Ho conseguito la <strong>Laurea triennale in Ingegneria Gestionale (BSc)</strong> e la <strong>Laurea magistrale in Management Engineering (MSc)</strong> con major in <strong>Industry 4.0</strong> al Politecnico di Milano. Sto proseguendo con un <strong>secondo master in Ingeniería Industrial</strong> (especialidad en <strong>Diseño, técnicas de fabricación y produzione industrial</strong>) presso la <strong>UPV</strong>, nell'ambito di una <strong>doppia laurea</strong> ottenuta grazie a una borsa di studio, con <strong>tesi condivisa</strong> tra i due atenei.",
     "hero.cta_projects": "Vedi i progetti",
     "hero.cta_contact": "Contattami",
-
     "about.title": "Chi sono",
     "about.body": "Appassionato di innovazione e Industria 4.0, mi muovo tra progetti di <strong>ingegneria</strong> e <strong>gestione d’impresa</strong>. Competenze principali: analisi dati, gestione progetti, digitalizzazione dei processi, miglioramento continuo.",
     "about.badge1": "Industry 4.0",
     "about.badge2": "Gestione progetti",
     "about.badge3": "Analisi dati",
     "about.badge4": "Operations",
-
     "edu.title": "Formazione",
     "edu.msc_polimi_title": "M.Sc. Management Engineering",
     "edu.msc_polimi_meta": "Major: Industry 4.0 — Politecnico di Milano",
     "edu.msc_upv_title": "M.Sc. Ingeniería Industrial",
-    "edu.msc_upv_meta": "Especialidad en Diseño, técnicas de fabricación y producción industrial — UPV (Valencia)<br>Double degree con Politecnico di Milano, borsa di studio; tesi condivisa tra i due atenei",
+    "edu.msc_upv_meta": "Especialidad en Diseño, técnicas de fabricación y produzione industrial — UPV (Valencia)<br>Double degree con Politecnico di Milano, borsa di studio; tesi condivisa tra i due atenei",
     "edu.bsc_title": "B.Sc. Ingegneria Gestionale",
     "edu.bsc_meta": "Politecnico di Milano",
     "edu.erasmus_title": "Erasmus — Politechnika Warszawska",
     "edu.erasmus_meta": "Varsavia, 6 mesi",
-
     "portfolio.title": "Portfolio",
     "portfolio.filter_all": "Tutti",
     "portfolio.filter_eng": "Ingegneria",
     "portfolio.filter_mgmt": "Gestione/Finance",
-
     "proj.a.title": "Progetto Ingegneristico A",
     "proj.a.desc": "Analisi e prototipazione di un modulo IoT per il monitoraggio ambientale.",
     "proj.b.title": "Progetto Ingegneristico B",
@@ -47,7 +40,6 @@ const I18N = {
     "proj.d.title": "Report di Sostenibilità",
     "proj.d.desc": "Framework GRI/CSRD, calcolo GHG e roadmap KPI ESG.",
     "proj.details": "Dettagli",
-
     "lang.title": "Lingue",
     "lang.body": "Ho una forte passione per le lingue e la comunicazione interculturale. Oltre all'italiano, parlo <strong>spagnolo</strong> e <strong>inglese</strong> a livello avanzato (C1). Nel breve periodo inizierò a studiare <strong>francese</strong>.",
     "lang.it": "Italiano",
@@ -59,13 +51,11 @@ const I18N = {
     "lang.it_aria": "Italiano C2 (Madrelingua)",
     "lang.es_aria": "Spagnolo C1",
     "lang.en_aria": "Inglese C1",
-
     "intl.title": "Esperienze Internazionali",
     "intl.erasmus_title": "Erasmus — Politechnika Warszawska",
     "intl.erasmus_meta": "Varsavia, 6 mesi",
     "intl.double_title": "Double Degree — PoliMi & UPV",
     "intl.double_meta": "Borsa di studio; tesi condivisa tra i due atenei",
-
     "contact.title": "Contatti",
     "contact.body": "Per collaborazioni o informazioni:",
     "contact.email": "giorgio@example.com",
@@ -78,33 +68,26 @@ const I18N = {
     "contact.form.placeholder_email": "La tua email",
     "contact.form.placeholder_msg": "Scrivi qui...",
     "contact.form.alert": "Grazie! Il form è solo dimostrativo su GitHub Pages.",
-
     "footer.rights": "Tutti i diritti riservati"
   },
-
   es: {
     "site.title": "Portafolio - Giorgio Capuana",
     "site.description": "Portafolio personal de Giorgio Capuana: proyectos de ingeniería y gestión/finanzas.",
-
     "nav.about": "Sobre mí",
     "nav.portfolio": "Portafolio",
     "nav.languages": "Idiomas",
     "nav.contact": "Contacto",
-
     "lang.select_label": "Elegir idioma",
-
     "hero.hi": "¡Hola! Soy <span class='hl'>Giorgio Capuana</span>.",
     "hero.lead": "Ingeniero de gestión con formación internacional entre el <strong>Politecnico di Milano</strong> y la <strong>Universidad Politécnica de Valencia</strong>. Obtuve el <strong>BSc en Ingeniería de Gestión</strong> y el <strong>MSc en Management Engineering</strong> con especialidad en <strong>Industria 4.0</strong> en el Politecnico di Milano. Actualmente curso un <strong>segundo máster en Ingeniería Industrial</strong> (especialidad en <strong>Diseño, técnicas de fabricación y producción industrial</strong>) en la <strong>UPV</strong>, dentro de un <strong>doble grado</strong> con beca y <strong>tesis compartida</strong> entre ambas universidades.",
     "hero.cta_projects": "Ver proyectos",
     "hero.cta_contact": "Contáctame",
-
     "about.title": "Sobre mí",
     "about.body": "Apasionado por la innovación y la Industria 4.0, trabajo entre proyectos de <strong>ingeniería</strong> y <strong>gestión empresarial</strong>. Competencias: análisis de datos, gestión de proyectos, digitalización de procesos y mejora continua.",
     "about.badge1": "Industria 4.0",
     "about.badge2": "Gestión de proyectos",
     "about.badge3": "Análisis de datos",
     "about.badge4": "Operaciones",
-
     "edu.title": "Formación",
     "edu.msc_polimi_title": "M.Sc. Management Engineering",
     "edu.msc_polimi_meta": "Especialidad: Industry 4.0 — Politecnico di Milano",
@@ -114,12 +97,10 @@ const I18N = {
     "edu.bsc_meta": "Politecnico di Milano",
     "edu.erasmus_title": "Erasmus — Politechnika Warszawska",
     "edu.erasmus_meta": "Varsovia, 6 meses",
-
     "portfolio.title": "Portafolio",
     "portfolio.filter_all": "Todos",
     "portfolio.filter_eng": "Ingeniería",
     "portfolio.filter_mgmt": "Gestión/Finanzas",
-
     "proj.a.title": "Proyecto de Ingeniería A",
     "proj.a.desc": "Análisis y prototipado de un módulo IoT para monitoreo ambiental.",
     "proj.b.title": "Proyecto de Ingeniería B",
@@ -129,7 +110,6 @@ const I18N = {
     "proj.d.title": "Informe de Sostenibilidad",
     "proj.d.desc": "Marco GRI/CSRD, cálculo GHG y hoja de ruta de KPIs ESG.",
     "proj.details": "Detalles",
-
     "lang.title": "Idiomas",
     "lang.body": "Me apasionan los idiomas y la comunicación intercultural. Además del italiano, hablo <strong>español</strong> e <strong>inglés</strong> a nivel avanzado (C1). Empezaré a estudiar <strong>francés</strong> en el corto plazo.",
     "lang.it": "Italiano",
@@ -141,13 +121,11 @@ const I18N = {
     "lang.it_aria": "Italiano C2 (Lengua materna)",
     "lang.es_aria": "Español C1",
     "lang.en_aria": "Inglés C1",
-
     "intl.title": "Experiencias internacionales",
     "intl.erasmus_title": "Erasmus — Politechnika Warszawska",
     "intl.erasmus_meta": "Varsovia, 6 meses",
     "intl.double_title": "Doble Titulación — PoliMi & UPV",
     "intl.double_meta": "Beca; tesis compartida entre ambas universidades",
-
     "contact.title": "Contacto",
     "contact.body": "Para colaboraciones o información:",
     "contact.email": "giorgio@example.com",
@@ -160,33 +138,26 @@ const I18N = {
     "contact.form.placeholder_email": "Tu correo",
     "contact.form.placeholder_msg": "Escribe aquí...",
     "contact.form.alert": "¡Gracias! Este formulario es solo demostrativo en GitHub Pages.",
-
     "footer.rights": "Todos los derechos reservados"
   },
-
   en: {
     "site.title": "Portfolio - Giorgio Capuana",
     "site.description": "Personal portfolio of Giorgio Capuana: engineering and management/finance projects.",
-
     "nav.about": "About",
     "nav.portfolio": "Portfolio",
     "nav.languages": "Languages",
     "nav.contact": "Contact",
-
     "lang.select_label": "Choose language",
-
     "hero.hi": "Hi! I'm <span class='hl'>Giorgio Capuana</span>.",
     "hero.lead": "Management engineer with international training between <strong>Politecnico di Milano</strong> and <strong>Universidad Politécnica de Valencia</strong>. I hold a <strong>BSc in Management Engineering</strong> and an <strong>MSc in Management Engineering</strong> with a major in <strong>Industry 4.0</strong> from Politecnico di Milano. I'm pursuing a <strong>second master's in Industrial Engineering</strong> (specialization in <strong>Design, manufacturing techniques and industrial production</strong>) at <strong>UPV</strong>, as part of a <strong>double degree</strong> scholarship with a <strong>joint thesis</strong> between both universities.",
     "hero.cta_projects": "See projects",
     "hero.cta_contact": "Contact me",
-
     "about.title": "About",
     "about.body": "Passionate about innovation and Industry 4.0, I work across <strong>engineering</strong> and <strong>business management</strong> projects. Key skills: data analysis, project management, process digitalization, continuous improvement.",
     "about.badge1": "Industry 4.0",
     "about.badge2": "Project management",
     "about.badge3": "Data analysis",
     "about.badge4": "Operations",
-
     "edu.title": "Education",
     "edu.msc_polimi_title": "M.Sc. Management Engineering",
     "edu.msc_polimi_meta": "Major: Industry 4.0 — Politecnico di Milano",
@@ -196,12 +167,10 @@ const I18N = {
     "edu.bsc_meta": "Politecnico di Milano",
     "edu.erasmus_title": "Erasmus — Politechnika Warszawska",
     "edu.erasmus_meta": "Warsaw, 6 months",
-
     "portfolio.title": "Portfolio",
     "portfolio.filter_all": "All",
     "portfolio.filter_eng": "Engineering",
     "portfolio.filter_mgmt": "Management/Finance",
-
     "proj.a.title": "Engineering Project A",
     "proj.a.desc": "Analysis and prototyping of an IoT module for environmental monitoring.",
     "proj.b.title": "Engineering Project B",
@@ -211,7 +180,6 @@ const I18N = {
     "proj.d.title": "Sustainability Report",
     "proj.d.desc": "GRI/CSRD framework, GHG accounting, and ESG KPI roadmap.",
     "proj.details": "Details",
-
     "lang.title": "Languages",
     "lang.body": "I’m passionate about languages and intercultural communication. Besides Italian, I speak <strong>Spanish</strong> and <strong>English</strong> at an advanced (C1) level. I plan to start studying <strong>French</strong> soon.",
     "lang.it": "Italian",
@@ -223,13 +191,11 @@ const I18N = {
     "lang.it_aria": "Italian C2 (Native)",
     "lang.es_aria": "Spanish C1",
     "lang.en_aria": "English C1",
-
     "intl.title": "International Experiences",
     "intl.erasmus_title": "Erasmus — Politechnika Warszawska",
     "intl.erasmus_meta": "Warsaw, 6 months",
     "intl.double_title": "Double Degree — PoliMi & UPV",
     "intl.double_meta": "Scholarship; joint thesis between both universities",
-
     "contact.title": "Contact",
     "contact.body": "For collaborations or info:",
     "contact.email": "giorgio@example.com",
@@ -242,7 +208,6 @@ const I18N = {
     "contact.form.placeholder_email": "Your email",
     "contact.form.placeholder_msg": "Write here...",
     "contact.form.alert": "Thanks! This form is demo-only on GitHub Pages.",
-
     "footer.rights": "All rights reserved"
   }
 };
@@ -251,21 +216,20 @@ const I18N = {
 function applyI18n(lang) {
   const dict = I18N[lang] || I18N.it;
 
-  // <title> e <meta name="description">
+  // <title> + <meta name="description">
   if (dict["site.title"]) document.title = dict["site.title"];
   const metaDesc = document.querySelector('meta[name="description"][data-i18n]');
   if (metaDesc && dict["site.description"]) metaDesc.setAttribute("content", dict["site.description"]);
 
-  // tutti gli elementi con data-i18n
+  // testi con data-i18n
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
     const value = dict[key];
-    if (!value) { console.warn("i18n key not found:", key); return; }
-    if (el.tagName.toLowerCase() === "meta") return; // già gestito sopra
-    el.innerHTML = value; // consente <strong> ecc.
+    if (!value || el.tagName.toLowerCase() === "meta") return;
+    el.innerHTML = value;
   });
 
-  // placeholder dei campi (senza toccare l'HTML)
+  // placeholder del form
   const nome = document.getElementById("nome");
   if (nome && dict["contact.form.placeholder_name"]) nome.placeholder = dict["contact.form.placeholder_name"];
   const email = document.getElementById("email");
@@ -273,13 +237,13 @@ function applyI18n(lang) {
   const msg = document.getElementById("msg");
   if (msg && dict["contact.form.placeholder_msg"]) msg.placeholder = dict["contact.form.placeholder_msg"];
 
-  // aria-label per le barre livello lingue (ordine: IT, ES, EN)
+  // aria-label per le barre lingua
   const bars = document.querySelectorAll(".lang-list .lang-item .level-bar");
   if (bars[0]) bars[0].setAttribute("aria-label", dict["lang.it_aria"] || "");
   if (bars[1]) bars[1].setAttribute("aria-label", dict["lang.es_aria"] || "");
   if (bars[2]) bars[2].setAttribute("aria-label", dict["lang.en_aria"] || "");
 
-  // sostituisco l'alert inline del form con uno localizzato
+  // alert localizzato del form (sostituisce quello inline)
   const form = document.querySelector("form.card");
   if (form && dict["contact.form.alert"]) {
     form.onsubmit = (e) => { e.preventDefault(); alert(dict["contact.form.alert"]); };
@@ -289,32 +253,30 @@ function applyI18n(lang) {
   localStorage.setItem("lang", lang);
 }
 
-// ---------- Inizializzazione ----------
-document.addEventListener("DOMContentLoaded", () => {
-  // anno nel footer
-  const y = document.getElementById("year");
-  if (y) y.textContent = new Date().getFullYear();
-
-  // selettore lingua
+// ---------- Init robusta ----------
+function initI18n() {
   const select = document.getElementById("lang");
-  const saved = localStorage.getItem("lang") || (navigator.language || "it").slice(0, 2);
-  const initial = ["it", "es", "en"].includes(saved) ? saved : "it";
-
+  const saved = localStorage.getItem("lang") || (navigator.language || "it").slice(0,2);
+  const initial = ["it","es","en"].includes(saved) ? saved : "it";
   if (select) {
     select.value = initial;
     applyI18n(initial);
-    select.addEventListener("change", (e) => applyI18n(e.target.value));
+    select.addEventListener("change", e => applyI18n(e.target.value));
   } else {
     applyI18n(initial);
   }
 
-  // filtri portfolio (come prima)
+  // anno footer
+  const y = document.getElementById("year");
+  if (y) y.textContent = new Date().getFullYear();
+
+  // filtri portfolio
   const filterButtons = document.querySelectorAll(".filter-btn");
   const projects = document.querySelectorAll(".project");
   filterButtons.forEach(btn => {
     btn.addEventListener("click", () => {
-      filterButtons.forEach(b => { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
-      btn.classList.add("active"); btn.setAttribute("aria-selected", "true");
+      filterButtons.forEach(b => { b.classList.remove("active"); b.setAttribute("aria-selected","false"); });
+      btn.classList.add("active"); btn.setAttribute("aria-selected","true");
       const filter = btn.getAttribute("data-filter");
       projects.forEach(card => {
         const tags = (card.getAttribute("data-tags") || "").split(",");
@@ -322,4 +284,14 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
-});
+}
+
+// esegui subito se il DOM è già pronto, altrimenti aspetta DOMContentLoaded
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initI18n);
+} else {
+  initI18n();
+}
+
+
+
