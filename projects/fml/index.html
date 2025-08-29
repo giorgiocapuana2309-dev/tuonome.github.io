@@ -88,20 +88,18 @@
       </header>
 
       <!-- Slider -->
-      <section aria-label="Galleria immagini progetto">
-        <div class="carousel" id="carousel">
-          <div class="slides" id="slides">
-            <figure class="slide"><img src="img/1.jpg" alt="Panoramica linea FML"></figure>
-            <figure class="slide"><img src="img/2.jpg" alt="Schema Simulink AS-IS"></figure>
-            <figure class="slide"><img src="img/3.jpg" alt="Analisi distribuzioni MATLAB"></figure>
-            <figure class="slide"><img src="img/4.jpg" alt="Doppio robot TO-BE"></figure>
-            <figure class="slide"><img src="img/5.jpg" alt="Buffer sizing e performance"></figure>
-          </div>
-          <button class="arrow prev" aria-label="Slide precedente" id="prev">‹</button>
-          <button class="arrow next" aria-label="Slide successiva" id="next">›</button>
-        </div>
-        <div class="dots" id="dots" role="tablist" aria-label="Indicatori slide"></div>
-      </section>
+     <section aria-label="Galleria immagini progetto">
+  <div class="gallery-card">              <!-- NEW wrapper -->
+    <div class="carousel" id="carousel">
+      <div class="slides" id="slides">
+        ...
+      </div>
+      <button class="arrow prev" id="prev">‹</button>
+      <button class="arrow next" id="next">›</button>
+    </div>
+    <div class="dots" id="dots" role="tablist" aria-label="Indicatori slide"></div>
+  </div>
+</section>
 
       <!-- Descrizione -->
       <section class="card">
