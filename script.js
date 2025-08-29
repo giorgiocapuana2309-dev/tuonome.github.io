@@ -46,6 +46,11 @@ const I18N = {
 "proj.scooter.page_desc": "Studio dinamico, selezione componenti e disegno di un monopattino elettrico.",
 "proj.scooter.lead":
   "Modello a corpo rigido della dinamica (longitudinale e laterale), baricentri e resistenze (Cd·A≈0,30; f_v≈0,001), sizing motore/ESC/batteria per 25 km/h in piano e 5 km/h al 15%; disegno telaio e BOM.",
+
+"proj.scooter.btn_dynamics":"Scarica PDF — Dinamica",
+"proj.scooter.btn_cad":"Scarica PDF — CAD & Tavole",
+"proj.scooter.btn_back":"← Torna al portfolio",
+
 "proj.scooter.desc_title": "Descrizione",
 "proj.scooter.desc_long":
   "Vincoli: carico utile 1500 N; 25 km/h in piano e 5 km/h al 15% (a≈0,5 m/s² allo spunto). Modello a corpo rigido con masse e baricentri (veicolo ≈15,7 kg), Cd·A≈0,30; f_v≈0,001; r_ruota 0,1016 m; η≈0,9; τ=1. Calcolo coppie/potenze, verifica aderenza (≈1,7 m/s²) e anti-ribaltamento (≈49,9%). Selezione motore/ESC/batteria, disegno telaio e tavole CAD con BOM.",
@@ -140,6 +145,11 @@ const I18N = {
 "proj.scooter.page_desc": "Estudio dinámico, selección de componentes y diseño.",
 "proj.scooter.lead":
   "Modelo de cuerpo rígido (longitudinal/lateral), masas y resistencias (Cd·A≈0,30; f_v≈0,001). Dimensionado motor/ESC/batería para 25 km/h en llano y 5 km/h al 15%; diseño de chasis y BOM.",
+
+"proj.scooter.btn_dynamics":"Descargar PDF — Dinámica",
+"proj.scooter.btn_cad":"Descargar PDF — CAD y planos",
+"proj.scooter.btn_back":"← Volver al portafolio",    
+    
 "proj.scooter.desc_title": "Descripción",
 "proj.scooter.desc_long":
   "Requisitos: carga útil 1500 N; 25 km/h en llano y 5 km/h al 15%. Cálculo de pares/potencias, verificación de adherencia (~1,7 m/s²) y anti-vuelco (~49,9%). Selección de componentes y planos CAD con BOM.",
@@ -234,6 +244,11 @@ const I18N = {
 "proj.scooter.page_desc": "Dynamics study, component selection and design.",
 "proj.scooter.lead":
   "Rigid-body dynamics (longitudinal/lateral), masses and resistances (Cd·A≈0.30; f_v≈0.001). Motor/ESC/battery sizing for 25 km/h on flat and 5 km/h at 15%; frame design and BOM.",
+
+"proj.scooter.btn_dynamics":"Download PDF — Dynamics",
+"proj.scooter.btn_cad":"Download PDF — CAD & drawings",
+"proj.scooter.btn_back":"← Back to portfolio",    
+
 "proj.scooter.desc_title": "Description",
 "proj.scooter.desc_long":
   "Requirements: payload 1500 N; 25 km/h flat and 5 km/h at 15%. Compute torques/power, traction limit (~1.7 m/s²) and anti-tip slope (~49.9%). Component selection, frame design and CAD drawings with BOM.",
