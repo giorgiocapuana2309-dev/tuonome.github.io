@@ -18,8 +18,8 @@
 }
 
 .hero-avatar{
-  width:280px;              /* PRIMA era 360px */
-  height:280px;             /* quadrata */
+  width330px;              /* PRIMA era 360px */
+  height:330px;             /* quadrata */
   object-fit:cover;
   border-radius:12px;       /* 0 se la vuoi a spigoli vivi */
   border:2px solid var(--border);
