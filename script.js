@@ -39,6 +39,19 @@ const I18N = {
     "proj.c.desc": "Comparativa paesi e priorità per l’espansione internazionale nel settore consulenza HVDC.",
     "proj.d.title": "Report di Sostenibilità",
     "proj.d.desc": "Framework GRI/CSRD, calcolo GHG e roadmap KPI ESG.",
+    "proj.scooter.title": "Studio della dinamica, selezione componenti e disegno di un monopattino elettrico",
+    "proj.scooter.desc": "Modello dinamico, dimensionamento powertrain, scelta batteria e telaio; disegni e BOM.",
+    
+    "proj.scooter.page_title": "Monopattino elettrico — Dettagli progetto",
+    "proj.scooter.page_desc": "Studio dinamico, selezione componenti e disegno di un monopattino elettrico.",
+    
+    "proj.scooter.lead":
+      "Modello a corpo rigido della dinamica (longitudinale e laterale), definizione baricentri e resistenze (Cd·A≈0,30; f_v≈0,001), sizing motore/ESC/batteria per 25 km/h in piano e 5 km/h al 15%; disegno telaio e BOM.",
+    
+    "proj.scooter.desc_title": "Descrizione",
+    "proj.scooter.desc_long":   
+      "Vincoli di progetto: carico utile 1500 N, 25 km/h in piano e 5 km/h al 15% (a≈0,5 m/s² allo spunto). Modello a corpo rigido con stima masse e baricentri (veicolo ≈15,7 kg), parametri di resistenza e rotolamento (Cd·A≈0,30; f_v≈0,001), raggio ruota 0,1016 m, rendimento η≈0,9, rapporto τ=1. Dal modello si ricavano coppie/potenze richieste, verifica di aderenza (limite ≈1,7 m/s²) e stabilità statica (pendenza anti-ribaltamento ≈49,9%). La parte costruttiva comprende selezione motore/ESC/batteria, disegno del telaio e tavole CAD con distinta base (BOM)."
+    
     "proj.details": "Dettagli",
     "lang.title": "Lingue",
     "lang.body": "Ho una forte passione per le lingue e la comunicazione interculturale. Oltre all'italiano, parlo <strong>spagnolo</strong> e <strong>inglese</strong> a livello avanzato (C1). Nel breve periodo inizierò a studiare <strong>francese</strong>.",
