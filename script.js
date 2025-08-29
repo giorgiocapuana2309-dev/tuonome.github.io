@@ -49,6 +49,20 @@ const I18N = {
 "proj.scooter.desc_title": "Descrizione",
 "proj.scooter.desc_long":
   "Vincoli: carico utile 1500 N; 25 km/h in piano e 5 km/h al 15% (a≈0,5 m/s² allo spunto). Modello a corpo rigido con masse e baricentri (veicolo ≈15,7 kg), Cd·A≈0,30; f_v≈0,001; r_ruota 0,1016 m; η≈0,9; τ=1. Calcolo coppie/potenze, verifica aderenza (≈1,7 m/s²) e anti-ribaltamento (≈49,9%). Selezione motore/ESC/batteria, disegno telaio e tavole CAD con BOM.",
+
+"proj.scooter.specs_title":"Scheda tecnica",
+"proj.scooter.specs.payload":"Carico utile","proj.scooter.specs.payload_val":"1500 N",
+"proj.scooter.specs.v_flat":"Velocità progetto (piano)","proj.scooter.specs.v_flat_val":"25 km/h",
+"proj.scooter.specs.slope":"Pendenza obiettivo","proj.scooter.specs.slope_val":"15% @ 5 km/h",
+"proj.scooter.specs.mass":"Massa veicolo","proj.scooter.specs.mass_val":"≈ 15,7 kg",
+"proj.scooter.specs.rwheel":"Raggio ruota","proj.scooter.specs.rwheel_val":"0,1016 m",
+"proj.scooter.specs.cda":"Resistenza aerodinamica","proj.scooter.specs.cda_val":"Cd·A ≈ 0,30",
+"proj.scooter.specs.rr":"Resistenza al rotolamento","proj.scooter.specs.rr_val":"f_v ≈ 0,001",
+"proj.scooter.specs.eta":"Rendimento complessivo","proj.scooter.specs.eta_val":"η ≈ 0,9",
+"proj.scooter.specs.tau":"Rapporto di trasmissione","proj.scooter.specs.tau_val":"τ = 1",
+"proj.scooter.specs.traction":"Limite aderenza (stima)","proj.scooter.specs.traction_val":"≈ 1,7 m/s²",
+"proj.scooter.specs.antitip":"Pendenza anti-ribaltamento","proj.scooter.specs.antitip_val":"≈ 49,9%",
+    
     "proj.details": "Dettagli",
     "lang.title": "Lingue",
     "lang.body": "Ho una forte passione per le lingue e la comunicazione interculturale. Oltre all'italiano, parlo <strong>spagnolo</strong> e <strong>inglese</strong> a livello avanzato (C1). Nel breve periodo inizierò a studiare <strong>francese</strong>.",
@@ -129,6 +143,20 @@ const I18N = {
 "proj.scooter.desc_title": "Descripción",
 "proj.scooter.desc_long":
   "Requisitos: carga útil 1500 N; 25 km/h en llano y 5 km/h al 15%. Cálculo de pares/potencias, verificación de adherencia (~1,7 m/s²) y anti-vuelco (~49,9%). Selección de componentes y planos CAD con BOM.",
+
+"proj.scooter.specs_title":"Ficha técnica",
+"proj.scooter.specs.payload":"Carga útil","proj.scooter.specs.payload_val":"1500 N",
+"proj.scooter.specs.v_flat":"Velocidad objetivo (llano)","proj.scooter.specs.v_flat_val":"25 km/h",
+"proj.scooter.specs.slope":"Pendiente objetivo","proj.scooter.specs.slope_val":"15% @ 5 km/h",
+"proj.scooter.specs.mass":"Masa del vehículo","proj.scooter.specs.mass_val":"≈ 15,7 kg",
+"proj.scooter.specs.rwheel":"Radio de rueda","proj.scooter.specs.rwheel_val":"0,1016 m",
+"proj.scooter.specs.cda":"Resistencia aerodinámica","proj.scooter.specs.cda_val":"Cd·A ≈ 0,30",
+"proj.scooter.specs.rr":"Resistencia a la rodadura","proj.scooter.specs.rr_val":"f_v ≈ 0,001",
+"proj.scooter.specs.eta":"Rendimiento global","proj.scooter.specs.eta_val":"η ≈ 0,9",
+"proj.scooter.specs.tau":"Relación de transmisión","proj.scooter.specs.tau_val":"τ = 1",
+"proj.scooter.specs.traction":"Límite de adherencia (est.)","proj.scooter.specs.traction_val":"≈ 1,7 m/s²",
+"proj.scooter.specs.antitip":"Pendiente anti-vuelco","proj.scooter.specs.antitip_val":"≈ 49,9%",
+    
     "proj.details": "Detalles",
     "lang.title": "Idiomas",
     "lang.body": "Me apasionan los idiomas y la comunicación intercultural. Además del italiano, hablo <strong>español</strong> e <strong>inglés</strong> a nivel avanzado (C1). Empezaré a estudiar <strong>francés</strong> en el corto plazo.",
@@ -209,6 +237,20 @@ const I18N = {
 "proj.scooter.desc_title": "Description",
 "proj.scooter.desc_long":
   "Requirements: payload 1500 N; 25 km/h flat and 5 km/h at 15%. Compute torques/power, traction limit (~1.7 m/s²) and anti-tip slope (~49.9%). Component selection, frame design and CAD drawings with BOM.",
+    
+"proj.scooter.specs_title":"Technical sheet",
+"proj.scooter.specs.payload":"Payload","proj.scooter.specs.payload_val":"1500 N",
+"proj.scooter.specs.v_flat":"Target speed (flat)","proj.scooter.specs.v_flat_val":"25 km/h",
+"proj.scooter.specs.slope":"Target slope","proj.scooter.specs.slope_val":"15% @ 5 km/h",
+"proj.scooter.specs.mass":"Vehicle mass","proj.scooter.specs.mass_val":"≈ 15.7 kg",
+"proj.scooter.specs.rwheel":"Wheel radius","proj.scooter.specs.rwheel_val":"0.1016 m",
+"proj.scooter.specs.cda":"Aerodynamic drag","proj.scooter.specs.cda_val":"Cd·A ≈ 0.30",
+"proj.scooter.specs.rr":"Rolling resistance","proj.scooter.specs.rr_val":"f_v ≈ 0.001",
+"proj.scooter.specs.eta":"Overall efficiency","proj.scooter.specs.eta_val":"η ≈ 0.9",
+"proj.scooter.specs.tau":"Gear ratio","proj.scooter.specs.tau_val":"τ = 1",
+"proj.scooter.specs.traction":"Traction limit (est.)","proj.scooter.specs.traction_val":"≈ 1.7 m/s²",
+"proj.scooter.specs.antitip":"Anti-tip slope","proj.scooter.specs.antitip_val":"≈ 49.9%",
+    
     "proj.details": "Details",
     "lang.title": "Languages",
     "lang.body": "I’m passionate about languages and intercultural communication. Besides Italian, I speak <strong>Spanish</strong> and <strong>English</strong> at an advanced (C1) level. I plan to start studying <strong>French</strong> soon.",
