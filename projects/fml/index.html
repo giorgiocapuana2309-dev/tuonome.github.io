@@ -1,1 +1,144 @@
-<!doctype html><title>FML</title>
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexible Manufacturing Line — Dettagli progetto</title>
+  <meta name="description" content="Modello AS-IS su Simulink, analisi statistica su MATLAB, individuazione collo di bottiglia, TO-BE e availability.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style.css?v=6">
+  <style>
+    /* --- Slider immagini (solo per questa pagina) --- */
+    .carousel { position:relative; border:1px solid var(--border); border-radius:var(--radius); background:var(--card); overflow:hidden; }
+    .slides { display:flex; transition:transform .6s ease; }
+    .slide { min-width:100%; aspect-ratio:16/9; background:#0f1117; display:flex; align-items:center; justify-content:center; }
+    .slide img { width:100%; height:100%; object-fit:cover; }
+    .arrow { position:absolute; top:50%; transform:translateY(-50%); border:none; background:rgba(0,0,0,.35); color:white; width:40px; height:40px; border-radius:50%; cursor:pointer; }
+    .arrow:hover { background:rgba(0,0,0,.55); }
+    .arrow.prev { left:.6rem; } .arrow.next { right:.6rem; }
+    .dots { display:flex; gap:.35rem; justify-content:center; margin:.6rem 0 0; }
+    .dot { width:8px; height:8px; border-radius:999px; background:var(--border); border:0; }
+    .dot.active { background:var(--accent); }
+    .lead { color: var(--muted); }
+    .stack { display:grid; gap:1rem; }
+    .btnrow { display:flex; gap:.6rem; flex-wrap:wrap; }
+  </style>
+</head>
+<body>
+  <main class="section">
+    <div class="container stack">
+      <div>
+        <a class="btn ghost" href="../../#portfolio">← Torna al portfolio</a>
+      </div>
+
+      <header>
+        <h1>Flexible Manufacturing Line (FML)</h1>
+        <p class="lead">
+          Modello digitale AS-IS su Simulink; analisi statistica dei tempi su MATLAB (fit distribuzioni, IQR per outlier);
+          identificazione del collo di bottiglia (Robot Cell) e redesign TO-BE con raddoppio della stazione robot e della Front Cover.
+        </p>
+      </header>
+
+      <!-- Slider -->
+      <section aria-label="Galleria immagini progetto">
+        <div class="carousel" id="carousel">
+          <div class="slides" id="slides">
+            <figure class="slide"><img src="img/1.jpg" alt="Panoramica linea FML"></figure>
+            <figure class="slide"><img src="img/2.jpg" alt="Schema Simulink AS-IS"></figure>
+            <figure class="slide"><img src="img/3.jpg" alt="Analisi distribuzioni MATLAB"></figure>
+            <figure class="slide"><img src="img/4.jpg" alt="Doppio robot TO-BE"></figure>
+            <figure class="slide"><img src="img/5.jpg" alt="Buffer sizing e performance"></figure>
+          </div>
+          <button class="arrow prev" aria-label="Slide precedente" id="prev">‹</button>
+          <button class="arrow next" aria-label="Slide successiva" id="next">›</button>
+        </div>
+        <div class="dots" id="dots" role="tablist" aria-label="Indicatori slide"></div>
+      </section>
+
+      <!-- Descrizione -->
+      <section class="card">
+        <h2>Descrizione</h2>
+        <p>
+          La linea flessibile (7 stazioni) è stata modellata in Simulink con code FIFO, gate e server;
+          i tempi di servizio sono stati acquisiti e analizzati in MATLAB per definire le distribuzioni più adatte
+          (non sempre gaussiane), rimuovere outlier con metodo IQR e calcolare attesi/varianze per stazione. :contentReference[oaicite:0]{index=0}
+        </p>
+        <p>
+          Il collo di bottiglia dell’AS-IS è la <strong>Robot Cell</strong> (TH minimo), per cui nel TO-BE è stata raddoppiata la stazione robot:
+          il TH della cella raddoppia e il sistema raggiunge ~0,075 pallet/s, con WIP critico ≈6,709. 
+        </p>
+        <p>
+          Per l’<strong>availability</strong> si è duplicata anche la <strong>Front Cover</strong> (stazione con disponibilità più bassa),
+          portando la capacità effettiva a 92,74 pz/h (availability linea ≈68,61% sul collo di bottiglia). :contentReference[oaicite:2]{index=2}
+        </p>
+      </section>
+
+      <!-- Risultati & conclusioni -->
+      <section class="card">
+        <h2>Risultati & conclusioni</h2>
+        <ul>
+          <li>AS-IS: Robot Cell bottleneck (min TH); caratterizzazione statistica per ogni stazione. </li>
+          <li>TO-BE (throughput): raddoppio Robot → bilanciamento carichi e incremento TH di linea. :contentReference[oaicite:4]{index=4}</li>
+          <li>TO-BE (availability): duplico Front Cover → capacità effettiva sale a 92,74 pz/h. :contentReference[oaicite:5]{index=5}</li>
+          <li>Capacità teorica finale ≈270,35 pz/h; capacità effettiva finale ≈164,19 pz/h. :contentReference[oaicite:6]{index=6}</li>
+          <li>Buffer sizing complessivo: 21 spazi distribuiti sulle code operative. :contentReference[oaicite:7]{index=7}</li>
+        </ul>
+        <p>
+          In sintesi: duplicando le stazioni critiche (Robot e poi Front Cover) si ottiene un
+          deciso salto di performance senza spostare il collo di bottiglia, massimizzando il ROI del redesign. :contentReference[oaicite:8]{index=8}
+        </p>
+      </section>
+
+      <!-- Download & back -->
+      <div class="btnrow">
+        <a class="btn primary" href="fml-report.pdf" download>Scarica PDF</a>
+        <a class="btn ghost" href="../../#portfolio">← Torna al portfolio</a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Slider semplice con autoplay + dots + frecce
+    (function(){
+      const track = document.getElementById('slides');
+      const slides = Array.from(track.children);
+      const dotsWrap = document.getElementById('dots');
+      const prev = document.getElementById('prev');
+      const next = document.getElementById('next');
+      const carousel = document.getElementById('carousel');
+      let i = 0, timer;
+
+      function goTo(n){
+        i = (n + slides.length) % slides.length;
+        track.style.transform = `translateX(-${i*100}%)`;
+        updateDots();
+      }
+      function updateDots(){
+        dotsWrap.querySelectorAll('.dot').forEach((d,idx)=>{
+          d.classList.toggle('active', idx===i);
+        });
+      }
+      // Dots
+      slides.forEach((_,idx)=>{
+        const b = document.createElement('button');
+        b.className = 'dot';
+        b.setAttribute('aria-label', 'Vai alla slide ' + (idx+1));
+        b.addEventListener('click', ()=>goTo(idx));
+        dotsWrap.appendChild(b);
+      });
+      updateDots();
+
+      // Frecce
+      prev.addEventListener('click', ()=>goTo(i-1));
+      next.addEventListener('click', ()=>goTo(i+1));
+
+      function start(){ timer = setInterval(()=>goTo(i+1), 4000); }
+      function stop(){ clearInterval(timer); }
+      carousel.addEventListener('mouseenter', stop);
+      carousel.addEventListener('mouseleave', start);
+      start();
+    })();
+  </script>
+</body>
+</html>
