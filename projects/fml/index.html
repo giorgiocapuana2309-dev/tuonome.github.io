@@ -62,7 +62,7 @@
         <p>
           La linea flessibile (7 stazioni) è stata modellata in Simulink con code FIFO, gate e server;
           i tempi di servizio sono stati acquisiti e analizzati in MATLAB per definire le distribuzioni più adatte
-          (non sempre gaussiane), rimuovere outlier con metodo IQR e calcolare attesi/varianze per stazione. :contentReference[oaicite:0]{index=0}
+          (non sempre gaussiane), rimuovere outlier con metodo IQR e calcolare attesi/varianze per stazione. 
         </p>
         <p>
           Il collo di bottiglia dell’AS-IS è la <strong>Robot Cell</strong> (TH minimo), per cui nel TO-BE è stata raddoppiata la stazione robot:
@@ -70,7 +70,7 @@
         </p>
         <p>
           Per l’<strong>availability</strong> si è duplicata anche la <strong>Front Cover</strong> (stazione con disponibilità più bassa),
-          portando la capacità effettiva a 92,74 pz/h (availability linea ≈68,61% sul collo di bottiglia). :contentReference[oaicite:2]{index=2}
+          portando la capacità effettiva a 92,74 pz/h (availability linea ≈68,61% sul collo di bottiglia).
         </p>
       </section>
 
@@ -79,14 +79,14 @@
         <h2>Risultati & conclusioni</h2>
         <ul>
           <li>AS-IS: Robot Cell bottleneck (min TH); caratterizzazione statistica per ogni stazione. </li>
-          <li>TO-BE (throughput): raddoppio Robot → bilanciamento carichi e incremento TH di linea. :contentReference[oaicite:4]{index=4}</li>
-          <li>TO-BE (availability): duplico Front Cover → capacità effettiva sale a 92,74 pz/h. :contentReference[oaicite:5]{index=5}</li>
-          <li>Capacità teorica finale ≈270,35 pz/h; capacità effettiva finale ≈164,19 pz/h. :contentReference[oaicite:6]{index=6}</li>
-          <li>Buffer sizing complessivo: 21 spazi distribuiti sulle code operative. :contentReference[oaicite:7]{index=7}</li>
+          <li>TO-BE (throughput): raddoppio Robot → bilanciamento carichi e incremento TH di linea. </li>
+          <li>TO-BE (availability): duplico Front Cover → capacità effettiva sale a 92,74 pz/h. </li>
+          <li>Capacità teorica finale ≈270,35 pz/h; capacità effettiva finale ≈164,19 pz/h. </li>
+          <li>Buffer sizing complessivo: 21 spazi distribuiti sulle code operative. </li>
         </ul>
         <p>
           In sintesi: duplicando le stazioni critiche (Robot e poi Front Cover) si ottiene un
-          deciso salto di performance senza spostare il collo di bottiglia, massimizzando il ROI del redesign. :contentReference[oaicite:8]{index=8}
+          deciso salto di performance senza spostare il collo di bottiglia, massimizzando il ROI del redesign.
         </p>
       </section>
 
