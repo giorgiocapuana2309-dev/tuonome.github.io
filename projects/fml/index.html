@@ -20,33 +20,40 @@
   overflow:hidden;
   max-width:760px;   /* larghezza massima dello slider */
   width:100%;
-  margin:0 auto;     /* centra lo slider */
+  margin:0 auto;
 }
-.slides{ display:flex; transition:transform .6s ease; }
 
-/* Niente aspect-ratio fisso: lasciamo che l’altezza si adatti all’immagine */
+.slides{
+  display:flex;
+  gap:0;                      /* nessuno spazio tra le slide */
+  transition:transform .6s ease;
+  will-change: transform;
+}
+
+/* Ogni slide occupa SEMPRE il 100% della larghezza del viewport dello slider */
 .slide{
+  flex: 0 0 100%;             /* <-- questo evita lo shrink */
   min-width:100%;
   background:#0f1117;
   display:flex;
   align-items:center;
   justify-content:center;
-  padding:8px;       /* un po’ di aria intorno all’immagine */
+  padding:8px;
 }
 
-/* Immagine centrata e leggibile sia in verticale che in orizzontale */
+/* Immagine centrata, senza tagli, adatta a portrait e landscape */
 .slide img{
   display:block;
   max-width:100%;
-  max-height:520px;  /* altezza massima visibile della foto */
-  width:auto;        /* consente ai ritratti di allargarsi quanto basta */
+  max-height:520px;           /* regola qui l’altezza massima */
+  width:auto;
   height:auto;
-  object-fit:contain;
-  object-position:center;
+  object-fit:contain;         /* niente crop */
+  object-position:center;     /* centrata */
   margin:auto;
 }
 
-/* Frecce e pallini (uguali a prima, dimensioni un filo più piccole) */
+/* Frecce + pallini */
 .arrow{
   position:absolute; top:50%; transform:translateY(-50%);
   border:none; background:rgba(0,0,0,.35); color:white;
@@ -54,12 +61,13 @@
 }
 .arrow:hover{ background:rgba(0,0,0,.55); }
 .arrow.prev{ left:.6rem; } .arrow.next{ right:.6rem; }
+
 .dots{ display:flex; gap:.35rem; justify-content:center; margin:.6rem 0 0; }
 .dot{ width:8px; height:8px; border-radius:999px; background:var(--border); border:0; }
 .dot.active{ background:var(--accent); }
 
 @media (max-width:900px){
-  .slide img{ max-height:360px; }  /* un po’ più basso su mobile */
+  .slide img{ max-height:360px; }
   .carousel{ max-width:100%; }
 }
   </style>
