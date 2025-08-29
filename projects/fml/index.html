@@ -9,54 +9,64 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../style.css?v=6">
   <style>
-    /* dimensioni più piccole + no taglio */
-/* --- Slider immagini (solo per questa pagina) --- */
-/* --- Slider immagini (solo per questa pagina) --- */
+/* --- CARD intorno allo slider --- */
+.gallery-card{
+  max-width: 820px;             /* <--- regola qui la larghezza massima */
+  margin: 0 auto;
+  padding: 16px 12px 10px;
+  background: linear-gradient(180deg,#101219,#121318);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  box-shadow: 0 16px 48px rgba(0,0,0,.35);
+}
+.gallery-card::before{
+  content:"";
+  display:block;
+  width:64px; height:6px;
+  margin: 0 auto 10px;
+  border-radius:999px;
+  background:#202331;           /* piccola “notch” decorativa */
+}
+
+/* --- Slider immagini --- */
 .carousel{
   position:relative;
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  background:var(--card);
+  border-radius: 20px;
+  background:#0b0c10;
   overflow:hidden;
-  max-width:760px;   /* larghezza massima dello slider */
-  width:100%;
-  margin:0 auto;
 }
 
 .slides{
   display:flex;
-  gap:0;                      /* nessuno spazio tra le slide */
-  transition:transform .6s ease;
+  gap:0;
+  transition: transform .6s ease;
   will-change: transform;
 }
 
-/* Ogni slide occupa SEMPRE il 100% della larghezza del viewport dello slider */
 .slide{
-  flex: 0 0 100%;             /* <-- questo evita lo shrink */
+  flex: 0 0 100%;               /* ogni slide = 100% larghezza */
   min-width:100%;
+  display:flex; align-items:center; justify-content:center;
   background:#0f1117;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:8px;
+  padding: 8px;
 }
 
-/* Immagine centrata, senza tagli, adatta a portrait e landscape */
+/* immagini CENTRATE, senza tagli, più contenute */
 .slide img{
   display:block;
-  max-width:100%;
-  max-height:520px;           /* regola qui l’altezza massima */
-  width:auto;
-  height:auto;
-  object-fit:contain;         /* niente crop */
-  object-position:center;     /* centrata */
-  margin:auto;
+  max-width: 100%;
+  max-height: 420px;            /* <--- regola qui l’altezza massima */
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  margin: auto;
 }
 
-/* Frecce + pallini */
+/* Frecce e pallini */
 .arrow{
   position:absolute; top:50%; transform:translateY(-50%);
-  border:none; background:rgba(0,0,0,.35); color:white;
+  border:none; background:rgba(0,0,0,.35); color:#fff;
   width:32px; height:32px; border-radius:50%; cursor:pointer;
 }
 .arrow:hover{ background:rgba(0,0,0,.55); }
@@ -67,8 +77,8 @@
 .dot.active{ background:var(--accent); }
 
 @media (max-width:900px){
-  .slide img{ max-height:360px; }
-  .carousel{ max-width:100%; }
+  .gallery-card{ max-width:100%; }
+  .slide img{ max-height: 320px; }
 }
   </style>
 </head>
