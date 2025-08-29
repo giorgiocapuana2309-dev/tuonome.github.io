@@ -18,20 +18,20 @@
 }
 
 .hero-avatar{
-  width:360px;      /* grande */
-  height:360px;     /* quadrata */
-  object-fit:cover; /* riempie senza deformarsi */
-  border-radius:12px;           /* 0 = spigoli vivi, 50% = cerchio */
+  width:260px;              /* PRIMA era 360px */
+  height:260px;             /* quadrata */
+  object-fit:cover;
+  border-radius:12px;       /* 0 se la vuoi a spigoli vivi */
   border:2px solid var(--border);
   box-shadow:var(--shadow);
 }
 
 /* Responsive */
 @media (max-width: 1024px){
-  .hero-avatar{ width:300px; height:300px; }
+  .hero-avatar{ width:220px; height:220px; }
 }
 @media (max-width: 900px){
   .hero-grid{ grid-template-columns:1fr; }
   .hero-photo{ justify-content:flex-start; }
-  .hero-avatar{ width:220px; height:220px; margin-top:8px; }
+  .hero-avatar{ width:180px; height:180px; margin-top:8px; }
 }
