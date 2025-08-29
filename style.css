@@ -18,20 +18,21 @@
 }
 
 .hero-avatar{
-  width330px;              /* PRIMA era 360px */
-  height:330px;             /* quadrata */
+  width:260px;          /* larghezza invariata */
+  height:320px;         /* + altezza per tagliare meno in alto/basso */
   object-fit:cover;
-  border-radius:12px;       /* 0 se la vuoi a spigoli vivi */
+  object-position:50% 35%; /* sposta il ritaglio un po' verso l'alto: 0%=top, 100%=bottom */
+  border-radius:12px;
   border:2px solid var(--border);
   box-shadow:var(--shadow);
 }
 
 /* Responsive */
-@media (max-width: 1024px){
-  .hero-avatar{ width:220px; height:220px; }
+@media (max-width:1024px){
+  .hero-avatar{ width:230px; height:290px; object-position:50% 35%; }
 }
-@media (max-width: 900px){
+@media (max-width:900px){
   .hero-grid{ grid-template-columns:1fr; }
   .hero-photo{ justify-content:flex-start; }
-  .hero-avatar{ width:180px; height:180px; margin-top:8px; }
+  .hero-avatar{ width:180px; height:220px; object-position:50% 35%; margin-top:8px; }
 }
