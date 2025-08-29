@@ -1,2 +1,82 @@
-<!doctype html><meta charset="utf-8"><title>Monopattino</title>
-<p>Pagina progetto: verrà completata nel passo successivo.</p>
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="proj.scooter.page_title">Monopattino elettrico — Dettagli progetto</title>
+  <meta name="description" data-i18n="proj.scooter.page_desc" content="Studio dinamico, selezione componenti e disegno di un monopattino elettrico.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style.css?v=3">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">●</span>
+        <a href="../../index.html" class="brand-name">Giorgio Capuana</a>
+      </div>
+      <nav class="nav">
+        <a href="../../index.html#about" data-i18n="nav.about">Chi sono</a>
+        <a href="../../index.html#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="../../index.html#lingue" data-i18n="nav.languages">Lingue</a>
+        <a href="../../index.html#contatti" data-i18n="nav.contact">Contatti</a>
+      </nav>
+      <div class="lang-switch">
+        <label for="lang" class="sr-only" data-i18n="lang.select_label">Scegli lingua</label>
+        <select id="lang" aria-label="Language selector">
+          <option value="it">Italiano</option>
+          <option value="es">Español</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Testata progetto -->
+    <section class="section">
+      <div class="container two-col">
+        <div>
+          <h1 data-i18n="proj.scooter.title">Studio della dinamica, selezione componenti e disegno di un monopattino elettrico</h1>
+          <p class="lead" data-i18n="proj.scooter.lead">
+            Modello a corpo rigido, valutazione scenari di guida, sizing motore/ESC/batteria e disegno telaio.
+            Inclusi BOM e stime autonomia/prestazioni.
+          </p>
+
+          <div class="cta-row" style="margin-top:.8rem">
+            <a class="btn primary" href="relazione.pdf" download data-i18n="proj.scooter.download_pdf">Scarica PDF</a>
+            <a class="btn ghost" href="../../index.html#portfolio" data-i18n="proj.scooter.back">← Torna al portfolio</a>
+          </div>
+        </div>
+
+        <aside class="card">
+          <img src="cover.jpg" alt="Copertina progetto monopattino elettrico"
+               style="width:100%;height:auto;border-radius:12px;">
+        </aside>
+      </div>
+    </section>
+
+    <!-- Descrizione -->
+    <section class="section">
+      <div class="container">
+        <h2 data-i18n="proj.scooter.desc_title">Descrizione</h2>
+        <p data-i18n="proj.scooter.desc_long">
+          Il progetto sviluppa un modello semplificato della dinamica longitudinale e laterale del monopattino,
+          consente il dimensionamento del motore e del pacco batteria a partire da requisiti di pendenza e
+          accelerazione, seleziona componenti commerciali (ESC, motore hub, celle) e definisce disegni del telaio.
+          Vengono forniti computi di autonomia, potenza assorbita e stima masse, oltre alla distinta base (BOM).
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Giorgio Capuana — <span data-i18n="footer.rights">Tutti i diritti riservati</span></small>
+    </div>
+  </footer>
+
+  <script src="../../script.js?v=3"></script>
+</body>
+</html>
