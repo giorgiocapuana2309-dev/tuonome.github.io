@@ -36,3 +36,24 @@
   .hero-photo{ justify-content:flex-start; }
   .hero-avatar{ width:180px; height:220px; object-position:50% 35%; margin-top:8px; }
 }
+
+.specs{
+  width:100%;
+  border-collapse:collapse;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+.specs th, .specs td{
+  padding:.75rem 1rem;
+  border-bottom:1px solid var(--border);
+}
+.specs th{
+  text-align:left;
+  width:42%;
+  color:var(--muted);
+  font-weight:600;
+}
+.specs tr:last-child th, .specs tr:last-child td{ border-bottom:none; }
