@@ -119,6 +119,16 @@ const I18N = {
     "proj.c.desc": "Comparativa de países y prioridades para la expansión internacional en consultoría HVDC.",
     "proj.d.title": "Informe de Sostenibilidad",
     "proj.d.desc": "Marco GRI/CSRD, cálculo GHG y hoja de ruta de KPIs ESG.",
+    // --- Monopattino: ES ---
+"proj.scooter.title": "Estudio de la dinámica, selección de componentes y diseño de un patinete eléctrico",
+"proj.scooter.desc": "Modelo dinámico, dimensionamiento del powertrain, batería y chasis; planos y BOM.",
+"proj.scooter.page_title": "Patinete eléctrico — Detalles del proyecto",
+"proj.scooter.page_desc": "Estudio dinámico, selección de componentes y diseño.",
+"proj.scooter.lead":
+  "Modelo de cuerpo rígido (longitudinal/lateral), masas y resistencias (Cd·A≈0,30; f_v≈0,001). Dimensionado motor/ESC/batería para 25 km/h en llano y 5 km/h al 15%; diseño de chasis y BOM.",
+"proj.scooter.desc_title": "Descripción",
+"proj.scooter.desc_long":
+  "Requisitos: carga útil 1500 N; 25 km/h en llano y 5 km/h al 15%. Cálculo de pares/potencias, verificación de adherencia (~1,7 m/s²) y anti-vuelco (~49,9%). Selección de componentes y planos CAD con BOM."
     "proj.details": "Detalles",
     "lang.title": "Idiomas",
     "lang.body": "Me apasionan los idiomas y la comunicación intercultural. Además del italiano, hablo <strong>español</strong> e <strong>inglés</strong> a nivel avanzado (C1). Empezaré a estudiar <strong>francés</strong> en el corto plazo.",
@@ -189,6 +199,16 @@ const I18N = {
     "proj.c.desc": "Country comparison and priorities for international expansion in HVDC consulting.",
     "proj.d.title": "Sustainability Report",
     "proj.d.desc": "GRI/CSRD framework, GHG accounting, and ESG KPI roadmap.",
+    // --- Monopattino: EN ---
+"proj.scooter.title": "Dynamics study, component selection and design of an electric scooter",
+"proj.scooter.desc": "Dynamic model, powertrain sizing, battery & frame selection; drawings and BOM.",
+"proj.scooter.page_title": "Electric scooter — Project details",
+"proj.scooter.page_desc": "Dynamics study, component selection and design.",
+"proj.scooter.lead":
+  "Rigid-body dynamics (longitudinal/lateral), masses and resistances (Cd·A≈0.30; f_v≈0.001). Motor/ESC/battery sizing for 25 km/h on flat and 5 km/h at 15%; frame design and BOM.",
+"proj.scooter.desc_title": "Description",
+"proj.scooter.desc_long":
+  "Requirements: payload 1500 N; 25 km/h flat and 5 km/h at 15%. Compute torques/power, traction limit (~1.7 m/s²) and anti-tip slope (~49.9%). Component selection, frame design and CAD drawings with BOM."
     "proj.details": "Details",
     "lang.title": "Languages",
     "lang.body": "I’m passionate about languages and intercultural communication. Besides Italian, I speak <strong>Spanish</strong> and <strong>English</strong> at an advanced (C1) level. I plan to start studying <strong>French</strong> soon.",
