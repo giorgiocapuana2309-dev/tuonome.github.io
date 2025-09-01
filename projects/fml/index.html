@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Flexible Manufacturing Line — Dettagli progetto</title>
-  <meta name="description" content="Modello AS-IS su Simulink, analisi statistica su MATLAB, individuazione collo di bottiglia, TO-BE e availability.">
+ <title data-i18n="fml.page_title">Flexible Manufacturing Line — Dettagli progetto</title>
+  <meta name="description" data-i18n="fml.page_desc"
+        content="Modello AS-IS su Simulink, analisi statistica su MATLAB, individuazione collo di bottiglia, TO-BE e availability.">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../style.css?v=6">
@@ -142,17 +143,17 @@
 
       <!-- Descrizione -->
       <section class="card">
-        <h2>Descrizione</h2>
-        <p>
+        <h2 data-i18n="fml.desc_title">Descrizione</h2>
+         <p data-i18n="fml.desc_p1">
           La linea flessibile (7 stazioni) è stata modellata in Simulink con code FIFO, gate e server;
           i tempi di servizio sono stati acquisiti e analizzati in MATLAB per definire le distribuzioni più adatte
           (non sempre gaussiane), rimuovere outlier con metodo IQR e calcolare attesi/varianze per stazione. 
         </p>
-        <p>
+        <p data-i18n="fml.desc_p2">
           Il collo di bottiglia dell’AS-IS è la <strong>Robot Cell</strong> (TH minimo), per cui nel TO-BE è stata raddoppiata la stazione robot:
           il TH della cella raddoppia e il sistema raggiunge ~0,075 pallet/s, con WIP critico ≈6,709. 
         </p>
-        <p>
+        <p data-i18n="fml.desc_p3">
           Per l’<strong>availability</strong> si è duplicata anche la <strong>Front Cover</strong> (stazione con disponibilità più bassa),
           portando la capacità effettiva a 92,74 pz/h (availability linea ≈68,61% sul collo di bottiglia).
         </p>
@@ -160,15 +161,15 @@
 
       <!-- Risultati & conclusioni -->
       <section class="card">
-        <h2>Risultati & conclusioni</h2>
-        <ul>
-          <li>AS-IS: Robot Cell bottleneck (min TH); caratterizzazione statistica per ogni stazione. </li>
-          <li>TO-BE (throughput): raddoppio Robot → bilanciamento carichi e incremento TH di linea. </li>
-          <li>TO-BE (availability): duplico Front Cover → capacità effettiva sale a 92,74 pz/h. </li>
-          <li>Capacità teorica finale ≈270,35 pz/h; capacità effettiva finale ≈164,19 pz/h. </li>
-          <li>Buffer sizing complessivo: 21 spazi distribuiti sulle code operative. </li>
+      <h2 data-i18n="fml.results_title">Risultati & conclusioni</h2>
+      <ul>
+          <li data-i18n="fml.res_1">AS-IS: Robot Cell bottleneck (min TH); caratterizzazione statistica per ogni stazione. </li>
+          <li data-i18n="fml.res_2">TO-BE (throughput): raddoppio Robot → bilanciamento carichi e incremento TH di linea. </li>
+          <li data-i18n="fml.res_3">TO-BE (availability): duplico Front Cover → capacità effettiva sale a 92,74 pz/h. </li>
+          <li data-i18n="fml.res_4">Capacità teorica finale ≈270,35 pz/h; capacità effettiva finale ≈164,19 pz/h. </li>
+          <li data-i18n="fml.res_5">Buffer sizing complessivo: 21 spazi distribuiti sulle code operative. </li>
         </ul>
-        <p>
+        <p data-i18n="fml.conclusion">
           In sintesi: duplicando le stazioni critiche (Robot e poi Front Cover) si ottiene un
           deciso salto di performance senza spostare il collo di bottiglia, massimizzando il ROI del redesign.
         </p>
@@ -181,13 +182,11 @@
          href="report-fml.pdf"
          download="FML_Report_GiorgioCapuana.pdf">
         Scarica report (PDF)
+        data-i18n="fml.download">Scarica report (PDF)</a>
       </a>
     
-      <!-- torna al portfolio -->
-      <a class="btn ghost" href="../../#portfolio">
-        ← Torna al portfolio
-      </a>
-    </div>
+      <a class="btn ghost" href="../../#portfolio" data-i18n="common.back">← Torna al portfolio</a>
+      </div>
 
   <script>
     // Slider semplice con autoplay + dots + frecce
