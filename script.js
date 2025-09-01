@@ -39,22 +39,20 @@ const I18N = {
     "proj.c.desc": "Comparativa paesi e priorità per l’espansione internazionale nel settore consulenza HVDC.",
     "proj.d.title": "Report di Sostenibilità",
     "proj.d.desc": "Framework GRI/CSRD, calcolo GHG e roadmap KPI ESG.",
+    
     // --- Monopattino: IT ---
 "proj.scooter.title": "Studio della dinamica, selezione componenti e disegno di un monopattino elettrico",
 "proj.scooter.desc": "Modello dinamico, dimensionamento powertrain, scelta batteria e telaio; disegni e BOM.",
 "proj.scooter.page_title": "Monopattino elettrico — Dettagli progetto",
 "proj.scooter.page_desc": "Studio dinamico, selezione componenti e disegno di un monopattino elettrico.",
 "proj.scooter.lead":
-  "Modello a corpo rigido della dinamica (longitudinale e laterale), baricentri e resistenze (Cd·A≈0,30; f_v≈0,001), sizing motore/ESC/batteria per 25 km/h in piano e 5 km/h al 15%; disegno telaio e BOM.",
-
+"Modello a corpo rigido della dinamica (longitudinale e laterale), baricentri e resistenze (Cd·A≈0,30; f_v≈0,001), sizing motore/ESC/batteria per 25 km/h in piano e 5 km/h al 15%; disegno telaio e BOM.",
 "proj.scooter.btn_dynamics":"Scarica PDF — Dinamica",
 "proj.scooter.btn_cad":"Scarica PDF — CAD & Tavole",
 "proj.scooter.btn_back":"← Torna al portfolio",
-
 "proj.scooter.desc_title": "Descrizione",
 "proj.scooter.desc_long":
-  "Vincoli: carico utile 1500 N; 25 km/h in piano e 5 km/h al 15% (a≈0,5 m/s² allo spunto). Modello a corpo rigido con masse e baricentri (veicolo ≈15,7 kg), Cd·A≈0,30; f_v≈0,001; r_ruota 0,1016 m; η≈0,9; τ=1. Calcolo coppie/potenze, verifica aderenza (≈1,7 m/s²) e anti-ribaltamento (≈49,9%). Selezione motore/ESC/batteria, disegno telaio e tavole CAD con BOM.",
-
+"Vincoli: carico utile 1500 N; 25 km/h in piano e 5 km/h al 15% (a≈0,5 m/s² allo spunto). Modello a corpo rigido con masse e baricentri (veicolo ≈15,7 kg), Cd·A≈0,30; f_v≈0,001; r_ruota 0,1016 m; η≈0,9; τ=1. Calcolo coppie/potenze, verifica aderenza (≈1,7 m/s²) e anti-ribaltamento (≈49,9%). Selezione motore/ESC/batteria, disegno telaio e tavole CAD con BOM.",
 "proj.scooter.specs_title":"Scheda tecnica",
 "proj.scooter.specs.payload":"Carico utile","proj.scooter.specs.payload_val":"1500 N",
 "proj.scooter.specs.v_flat":"Velocità progetto (piano)","proj.scooter.specs.v_flat_val":"25 km/h",
@@ -67,6 +65,25 @@ const I18N = {
 "proj.scooter.specs.tau":"Rapporto di trasmissione","proj.scooter.specs.tau_val":"τ = 1",
 "proj.scooter.specs.traction":"Limite aderenza (stima)","proj.scooter.specs.traction_val":"≈ 1,7 m/s²",
 "proj.scooter.specs.antitip":"Pendenza anti-ribaltamento","proj.scooter.specs.antitip_val":"≈ 49,9%",
+
+// --- FML: IT ---
+"common.back": "← Torna al portfolio",
+"fml.page_title": "Flexible Manufacturing Line — Dettagli progetto",
+"fml.page_desc": "Modello AS-IS su Simulink, analisi statistica su MATLAB, collo di bottiglia, TO-BE e availability.",
+"fml.title": "Flexible Manufacturing Line (FML)",
+"fml.lead": "Modello digitale AS-IS su Simulink; analisi statistica dei tempi su MATLAB (fit distribuzioni, IQR per outlier); identificazione del collo di bottiglia (Robot Cell) e redesign TO-BE con raddoppio della stazione robot e della Front Cover.",
+"fml.desc_title": "Descrizione",
+"fml.desc_p1": "La linea flessibile (7 stazioni) è stata modellata in Simulink con code FIFO, gate e server; i tempi di servizio sono stati acquisiti e analizzati in MATLAB per definire le distribuzioni più adatte (non sempre gaussiane), rimuovere outlier con metodo IQR e calcolare attesi/varianze per stazione.",
+"fml.desc_p2": "Il collo di bottiglia dell’AS-IS è la Robot Cell (TH minimo), per cui nel TO-BE è stata raddoppiata la stazione robot: il TH della cella raddoppia e il sistema raggiunge ~0,075 pallet/s, con WIP critico ≈6,709.",
+"fml.desc_p3": "Per l’availability si è duplicata anche la Front Cover (stazione con disponibilità più bassa), portando la capacità effettiva a 92,74 pz/h (availability linea ≈68,61% sul collo di bottiglia).",
+"fml.results_title": "Risultati & conclusioni",
+"fml.res_1": "AS-IS: Robot Cell bottleneck (min TH); caratterizzazione statistica per ogni stazione.",
+"fml.res_2": "TO-BE (throughput): raddoppio Robot → bilanciamento carichi e incremento TH di linea.",
+"fml.res_3": "TO-BE (availability): duplico Front Cover → capacità effettiva sale a 92,74 pz/h.",
+"fml.res_4": "Capacità teorica finale ≈270,35 pz/h; capacità effettiva finale ≈164,19 pz/h.",
+"fml.res_5": "Buffer sizing complessivo: 21 spazi distribuiti sulle code operative.",
+"fml.conclusion": "In sintesi: duplicando le stazioni critiche (Robot e poi Front Cover) si ottiene un deciso salto di performance senza spostare il collo di bottiglia, massimizzando il ROI del redesign.",
+"fml.download": "Scarica report (PDF)"
     
     "proj.details": "Dettagli",
     "lang.title": "Lingue",
@@ -144,16 +161,13 @@ const I18N = {
 "proj.scooter.page_title": "Patinete eléctrico — Detalles del proyecto",
 "proj.scooter.page_desc": "Estudio dinámico, selección de componentes y diseño.",
 "proj.scooter.lead":
-  "Modelo de cuerpo rígido (longitudinal/lateral), masas y resistencias (Cd·A≈0,30; f_v≈0,001). Dimensionado motor/ESC/batería para 25 km/h en llano y 5 km/h al 15%; diseño de chasis y BOM.",
-
+"Modelo de cuerpo rígido (longitudinal/lateral), masas y resistencias (Cd·A≈0,30; f_v≈0,001). Dimensionado motor/ESC/batería para 25 km/h en llano y 5 km/h al 15%; diseño de chasis y BOM.",
 "proj.scooter.btn_dynamics":"Descargar PDF — Dinámica",
 "proj.scooter.btn_cad":"Descargar PDF — CAD y planos",
 "proj.scooter.btn_back":"← Volver al portafolio",    
-    
 "proj.scooter.desc_title": "Descripción",
 "proj.scooter.desc_long":
-  "Requisitos: carga útil 1500 N; 25 km/h en llano y 5 km/h al 15%. Cálculo de pares/potencias, verificación de adherencia (~1,7 m/s²) y anti-vuelco (~49,9%). Selección de componentes y planos CAD con BOM.",
-
+"Requisitos: carga útil 1500 N; 25 km/h en llano y 5 km/h al 15%. Cálculo de pares/potencias, verificación de adherencia (~1,7 m/s²) y anti-vuelco (~49,9%). Selección de componentes y planos CAD con BOM.",
 "proj.scooter.specs_title":"Ficha técnica",
 "proj.scooter.specs.payload":"Carga útil","proj.scooter.specs.payload_val":"1500 N",
 "proj.scooter.specs.v_flat":"Velocidad objetivo (llano)","proj.scooter.specs.v_flat_val":"25 km/h",
@@ -166,6 +180,25 @@ const I18N = {
 "proj.scooter.specs.tau":"Relación de transmisión","proj.scooter.specs.tau_val":"τ = 1",
 "proj.scooter.specs.traction":"Límite de adherencia (est.)","proj.scooter.specs.traction_val":"≈ 1,7 m/s²",
 "proj.scooter.specs.antitip":"Pendiente anti-vuelco","proj.scooter.specs.antitip_val":"≈ 49,9%",
+
+// --- FML: ES ---
+"common.back": "← Volver al portafolio",
+"fml.page_title": "Flexible Manufacturing Line — Detalles del proyecto",
+"fml.page_desc": "Modelo AS-IS en Simulink, análisis estadístico en MATLAB, cuello de botella, TO-BE y disponibilidad.",
+"fml.title": "Flexible Manufacturing Line (FML)",
+"fml.lead": "Modelo digital AS-IS en Simulink; análisis estadístico de tiempos en MATLAB (ajuste de distribuciones, IQR para outliers); identificación del cuello de botella (Robot Cell) y rediseño TO-BE duplicando la estación robot y la Front Cover.",
+"fml.desc_title": "Descripción",
+"fml.desc_p1": "La línea flexible (7 estaciones) se modeló en Simulink con colas FIFO, compuertas y servidores; los tiempos de servicio se analizaron en MATLAB para elegir las distribuciones adecuadas (no siempre gaussianas), eliminar outliers con IQR y calcular medias/varianzas por estación.",
+"fml.desc_p2": "El cuello de botella del AS-IS es la Robot Cell (TH mínimo); en el TO-BE se duplica la estación robot: el TH de la celda se duplica y el sistema alcanza ~0,075 pallet/s, con WIP crítico ≈6,709.",
+"fml.desc_p3": "Para la availability se duplica también la Front Cover (estación con menor disponibilidad), elevando la capacidad efectiva a 92,74 pz/h (availability de línea ≈68,61% sobre el cuello de botella).",
+"fml.results_title": "Resultados y conclusiones",
+"fml.res_1": "AS-IS: Robot Cell como cuello de botella (TH mínimo); caracterización estadística por estación.",
+"fml.res_2": "TO-BE (throughput): duplicar Robot → balanceo de cargas y aumento del TH de línea.",
+"fml.res_3": "TO-BE (availability): duplicar Front Cover → capacidad efectiva sube a 92,74 pz/h.",
+"fml.res_4": "Capacidad teórica final ≈270,35 pz/h; capacidad efectiva final ≈164,19 pz/h.",
+"fml.res_5": "Dimensionamiento de buffers: 21 espacios distribuidos en las colas operativas.",
+"fml.conclusion": "En síntesis: duplicando las estaciones críticas (Robot y luego Front Cover) se logra un salto de rendimiento sin mover el cuello de botella, maximizando el ROI del rediseño.",
+"fml.download": "Descargar informe (PDF)"
     
     "proj.details": "Detalles",
     "lang.title": "Idiomas",
@@ -198,6 +231,7 @@ const I18N = {
     "contact.form.alert": "¡Gracias! Este formulario es solo demostrativo en GitHub Pages.",
     "footer.rights": "Todos los derechos reservados"
   },
+  
   en: {
     "site.title": "Portfolio - Giorgio Capuana",
     "site.description": "Personal portfolio of Giorgio Capuana: engineering and management/finance projects.",
@@ -243,16 +277,13 @@ const I18N = {
 "proj.scooter.page_title": "Electric scooter — Project details",
 "proj.scooter.page_desc": "Dynamics study, component selection and design.",
 "proj.scooter.lead":
-  "Rigid-body dynamics (longitudinal/lateral), masses and resistances (Cd·A≈0.30; f_v≈0.001). Motor/ESC/battery sizing for 25 km/h on flat and 5 km/h at 15%; frame design and BOM.",
-
+"Rigid-body dynamics (longitudinal/lateral), masses and resistances (Cd·A≈0.30; f_v≈0.001). Motor/ESC/battery sizing for 25 km/h on flat and 5 km/h at 15%; frame design and BOM.",
 "proj.scooter.btn_dynamics":"Download PDF — Dynamics",
 "proj.scooter.btn_cad":"Download PDF — CAD & drawings",
 "proj.scooter.btn_back":"← Back to portfolio",    
-
 "proj.scooter.desc_title": "Description",
 "proj.scooter.desc_long":
-  "Requirements: payload 1500 N; 25 km/h flat and 5 km/h at 15%. Compute torques/power, traction limit (~1.7 m/s²) and anti-tip slope (~49.9%). Component selection, frame design and CAD drawings with BOM.",
-    
+"Requirements: payload 1500 N; 25 km/h flat and 5 km/h at 15%. Compute torques/power, traction limit (~1.7 m/s²) and anti-tip slope (~49.9%). Component selection, frame design and CAD drawings with BOM.", 
 "proj.scooter.specs_title":"Technical sheet",
 "proj.scooter.specs.payload":"Payload","proj.scooter.specs.payload_val":"1500 N",
 "proj.scooter.specs.v_flat":"Target speed (flat)","proj.scooter.specs.v_flat_val":"25 km/h",
@@ -265,7 +296,26 @@ const I18N = {
 "proj.scooter.specs.tau":"Gear ratio","proj.scooter.specs.tau_val":"τ = 1",
 "proj.scooter.specs.traction":"Traction limit (est.)","proj.scooter.specs.traction_val":"≈ 1.7 m/s²",
 "proj.scooter.specs.antitip":"Anti-tip slope","proj.scooter.specs.antitip_val":"≈ 49.9%",
-    
+
+    // --- FML: ES --
+"common.back": "← Back to portfolio",
+"fml.page_title": "Flexible Manufacturing Line — Project details",
+"fml.page_desc": "AS-IS model in Simulink, statistical analysis in MATLAB, bottleneck, TO-BE and availability.",
+"fml.title": "Flexible Manufacturing Line (FML)",
+"fml.lead": "AS-IS digital model in Simulink; statistical time analysis in MATLAB (distribution fitting, IQR for outliers); bottleneck identification (Robot Cell) and TO-BE redesign by doubling the robot station and the Front Cover.",
+"fml.desc_title": "Description",
+"fml.desc_p1": "The 7-station flexible line was modelled in Simulink with FIFO queues, gates and servers; service times were analysed in MATLAB to select best-fit distributions (not always Gaussian), remove outliers via IQR and compute means/variances per station.",
+"fml.desc_p2": "The AS-IS bottleneck is the Robot Cell (minimum TH); in the TO-BE the robot station is doubled: cell TH doubles and the system reaches ~0.075 pallet/s with critical WIP ≈6.709.",
+"fml.desc_p3": "For availability, the Front Cover (lowest availability station) is also duplicated, bringing effective capacity to 92.74 pcs/h (line availability ≈68.61% at the bottleneck).",
+"fml.results_title": "Results & conclusions",
+"fml.res_1": "AS-IS: Robot Cell bottleneck (min TH); statistical characterisation per station.",
+"fml.res_2": "TO-BE (throughput): doubling Robot → load balancing and higher line TH.",
+"fml.res_3": "TO-BE (availability): duplicate Front Cover → effective capacity rises to 92.74 pcs/h.",
+"fml.res_4": "Final theoretical capacity ≈270.35 pcs/h; final effective ≈164.19 pcs/h.",
+"fml.res_5": "Overall buffer sizing: 21 slots distributed over the operating queues.",
+"fml.conclusion": "In short: by duplicating the critical stations (Robot and then Front Cover) you get a clear performance jump without shifting the bottleneck, maximising redesign ROI.",
+"fml.download": "Download report (PDF)"
+     
     "proj.details": "Details",
     "lang.title": "Languages",
     "lang.body": "I’m passionate about languages and intercultural communication. Besides Italian, I speak <strong>Spanish</strong> and <strong>English</strong> at an advanced (C1) level. I plan to start studying <strong>French</strong> soon.",
