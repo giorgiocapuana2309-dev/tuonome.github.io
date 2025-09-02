@@ -83,7 +83,7 @@ const I18N = {
 "fml.res_4": "Capacità teorica finale ≈270,35 pz/h; capacità effettiva finale ≈164,19 pz/h.",
 "fml.res_5": "Buffer sizing complessivo: 21 spazi distribuiti sulle code operative.",
 "fml.conclusion": "In sintesi: duplicando le stazioni critiche (Robot e poi Front Cover) si ottiene un deciso salto di performance senza spostare il collo di bottiglia, massimizzando il ROI del redesign.",
-"fml.download": "Scarica report (PDF)"
+"fml.download": "Scarica report (PDF)",
     
     "proj.details": "Dettagli",
     "lang.title": "Lingue",
@@ -198,7 +198,7 @@ const I18N = {
 "fml.res_4": "Capacidad teórica final ≈270,35 pz/h; capacidad efectiva final ≈164,19 pz/h.",
 "fml.res_5": "Dimensionamiento de buffers: 21 espacios distribuidos en las colas operativas.",
 "fml.conclusion": "En síntesis: duplicando las estaciones críticas (Robot y luego Front Cover) se logra un salto de rendimiento sin mover el cuello de botella, maximizando el ROI del rediseño.",
-"fml.download": "Descargar informe (PDF)"
+"fml.download": "Descargar informe (PDF)",
     
     "proj.details": "Detalles",
     "lang.title": "Idiomas",
@@ -314,7 +314,7 @@ const I18N = {
 "fml.res_4": "Final theoretical capacity ≈270.35 pcs/h; final effective ≈164.19 pcs/h.",
 "fml.res_5": "Overall buffer sizing: 21 slots distributed over the operating queues.",
 "fml.conclusion": "In short: by duplicating the critical stations (Robot and then Front Cover) you get a clear performance jump without shifting the bottleneck, maximising redesign ROI.",
-"fml.download": "Download report (PDF)"
+"fml.download": "Download report (PDF)",
      
     "proj.details": "Details",
     "lang.title": "Languages",
