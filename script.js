@@ -68,6 +68,8 @@ const I18N = {
 
 // --- FML: IT ---
 "common.back": "← Torna al portfolio",
+"fml.title": "Flexible Manufacturing Line (FML)",
+"fml.lead": "Modello digitale AS-IS su Simulink; analisi statistica dei tempi su MATLAB (fit distribuzioni, IQR per outlier); identificazione del collo di bottiglia (Robot Cell) e redesign TO-BE con raddoppio della stazione robot e della Front Cover.",
 "fml.page_title": "Flexible Manufacturing Line — Dettagli progetto",
 "fml.page_desc": "Modello AS-IS su Simulink, analisi statistica su MATLAB, collo di bottiglia, TO-BE e availability.",
 "fml.title": "Flexible Manufacturing Line (FML)",
@@ -183,6 +185,8 @@ const I18N = {
 
 // --- FML: ES ---
 "common.back": "← Volver al portafolio",
+"fml.title": "Flexible Manufacturing Line (FML)",
+"fml.lead": "AS-IS digital model in Simulink; statistical time analysis in MATLAB (distribution fitting, IQR for outliers); bottleneck identification (Robot Cell) and TO-BE redesign by doubling the robot station and the Front Cover.",
 "fml.page_title": "Flexible Manufacturing Line — Detalles del proyecto",
 "fml.page_desc": "Modelo AS-IS en Simulink, análisis estadístico en MATLAB, cuello de botella, TO-BE y disponibilidad.",
 "fml.title": "Flexible Manufacturing Line (FML)",
@@ -299,6 +303,8 @@ const I18N = {
 
     // --- FML: ES --
 "common.back": "← Back to portfolio",
+"fml.title": "Flexible Manufacturing Line (FML)",
+"fml.lead": "Modelo digital AS-IS en Simulink; análisis estadístico de tiempos en MATLAB (ajuste de distribuciones, IQR para outliers); identificación del cuello de botella (Robot Cell) y rediseño TO-BE duplicando la estación robot y la Front Cover."
 "fml.page_title": "Flexible Manufacturing Line — Project details",
 "fml.page_desc": "AS-IS model in Simulink, statistical analysis in MATLAB, bottleneck, TO-BE and availability.",
 "fml.title": "Flexible Manufacturing Line (FML)",
