@@ -84,7 +84,13 @@ const I18N = {
 "fml.res_5": "Buffer sizing complessivo: 21 spazi distribuiti sulle code operative.",
 "fml.conclusion": "In sintesi: duplicando le stazioni critiche (Robot e poi Front Cover) si ottiene un deciso salto di performance senza spostare il collo di bottiglia, massimizzando il ROI del redesign.",
 "fml.download": "Scarica report (PDF)",
-    
+
+// --- qda: IT ---
+I18N.it["proj.qda.title"] = "Analisi Statistica dei Dati con Python";
+I18N.it["proj.qda.desc"] = "Questo progetto spiega tecniche di analisi statistica applicata alla qualità, usando Python per gestire e modellare i dati.";
+I18N.it["proj.qda.download"] = "Scarica PDF";
+I18N.it["common.back"] = "← Torna al portfolio";
+
     "proj.details": "Dettagli",
     "lang.title": "Lingue",
     "lang.body": "Ho una forte passione per le lingue e la comunicazione interculturale. Oltre all'italiano, parlo <strong>spagnolo</strong> e <strong>inglese</strong> a livello avanzato (C1). Nel breve periodo inizierò a studiare <strong>francese</strong>.",
@@ -199,7 +205,13 @@ const I18N = {
 "fml.res_5": "Dimensionamiento de buffers: 21 espacios distribuidos en las colas operativas.",
 "fml.conclusion": "En síntesis: duplicando las estaciones críticas (Robot y luego Front Cover) se logra un salto de rendimiento sin mover el cuello de botella, maximizando el ROI del rediseño.",
 "fml.download": "Descargar informe (PDF)",
-    
+
+// --- qda: ES ---
+I18N.es["proj.qda.title"] = "Análisis Estadístico de Datos con Python";
+I18N.es["proj.qda.desc"] = "Este proyecto explica técnicas de análisis estadístico aplicadas a la calidad, usando Python para gestionar y modelar los datos.";
+I18N.es["proj.qda.download"] = "Descargar PDF";
+I18N.es["common.back"] = "← Volver al portafolio";
+  
     "proj.details": "Detalles",
     "lang.title": "Idiomas",
     "lang.body": "Me apasionan los idiomas y la comunicación intercultural. Además del italiano, hablo <strong>español</strong> e <strong>inglés</strong> a nivel avanzado (C1). Empezaré a estudiar <strong>francés</strong> en el corto plazo.",
@@ -297,7 +309,7 @@ const I18N = {
 "proj.scooter.specs.traction":"Traction limit (est.)","proj.scooter.specs.traction_val":"≈ 1.7 m/s²",
 "proj.scooter.specs.antitip":"Anti-tip slope","proj.scooter.specs.antitip_val":"≈ 49.9%",
 
-    // --- FML: ES --
+    // --- FML: EN --
 "common.back": "← Back to portfolio",
 "fml.page_title": "Flexible Manufacturing Line — Project details",
 "fml.page_desc": "AS-IS model in Simulink, statistical analysis in MATLAB, bottleneck, TO-BE and availability.",
@@ -315,7 +327,13 @@ const I18N = {
 "fml.res_5": "Overall buffer sizing: 21 slots distributed over the operating queues.",
 "fml.conclusion": "In short: by duplicating the critical stations (Robot and then Front Cover) you get a clear performance jump without shifting the bottleneck, maximising redesign ROI.",
 "fml.download": "Download report (PDF)",
-     
+
+// --- qda: EN --  
+I18N.en["proj.qda.title"] = "Statistical Data Analysis with Python";
+I18N.en["proj.qda.desc"] = "This project explains statistical data analysis techniques applied to quality, using Python for data management and modeling.";
+I18N.en["proj.qda.download"] = "Download PDF";
+I18N.en["common.back"] = "← Back to portfolio";
+  
     "proj.details": "Details",
     "lang.title": "Languages",
     "lang.body": "I’m passionate about languages and intercultural communication. Besides Italian, I speak <strong>Spanish</strong> and <strong>English</strong> at an advanced (C1) level. I plan to start studying <strong>French</strong> soon.",
