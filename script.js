@@ -86,11 +86,11 @@ const I18N = {
 "fml.download": "Scarica report (PDF)",
 
 
- "site.title": "Portfolio - Giorgio Capuana",
+"site.title": "Portfolio - Giorgio Capuana",
     "proj.qda.title": "Analisi Statistica dei Dati con Python",
     "proj.qda.desc": "Questo progetto spiega tecniche di analisi statistica applicata alla qualità, usando Python per gestire e modellare i dati.",
     "proj.qda.download": "Scarica PDF",
-    "common.back": "← Torna al portfolio"
+    "common.back": "← Torna al portfolio",
   
     "proj.details": "Dettagli",
     "lang.title": "Lingue",
@@ -208,10 +208,10 @@ const I18N = {
 "fml.download": "Descargar informe (PDF)",
 
 "site.title": "Portafolio - Giorgio Capuana",
-"proj.qda.title": "Análisis Estadístico de Datos con Python",
-"proj.qda.desc": "Este proyecto explica técnicas de análisis estadístico aplicadas a la calidad, usando Python para gestionar y modelar los datos.",
-"proj.qda.download": "Descargar PDF",
-"common.back": "← Volver al portafolio"
+    "proj.qda.title": "Análisis Estadístico de Datos con Python",
+    "proj.qda.desc": "Este proyecto explica técnicas de análisis estadístico aplicadas a la calidad, usando Python para gestionar y modelar los datos.",
+    "proj.qda.download": "Descargar PDF",
+    "common.back": "← Volver al portafolio",
     
     "proj.details": "Detalles",
     "lang.title": "Idiomas",
@@ -329,11 +329,11 @@ const I18N = {
 "fml.conclusion": "In short: by duplicating the critical stations (Robot and then Front Cover) you get a clear performance jump without shifting the bottleneck, maximising redesign ROI.",
 "fml.download": "Download report (PDF)",
 
-"site.title": "Portfolio - Giorgio Capuana",
-"proj.qda.title": "Statistical Data Analysis with Python",
-"proj.qda.desc": "This project explains statistical data analysis techniques applied to quality, using Python for data management and modeling.",
-"proj.qda.download": "Download PDF",
-"common.back": "← Back to portfolio",
+    "site.title": "Portfolio - Giorgio Capuana",
+    "proj.qda.title": "Statistical Data Analysis with Python",
+    "proj.qda.desc": "This project explains statistical data analysis techniques applied to quality, using Python for data management and modeling.",
+    "proj.qda.download": "Download PDF",
+    "common.back": "← Back to portfolio",
   
     "proj.details": "Details",
     "lang.title": "Languages",
