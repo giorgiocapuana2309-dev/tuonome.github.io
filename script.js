@@ -86,10 +86,10 @@ const I18N = {
 "fml.download": "Scarica report (PDF)",
 
 // --- qda: IT ---
-I18N.it["proj.qda.title"] = "Analisi Statistica dei Dati con Python";
-I18N.it["proj.qda.desc"] = "Questo progetto spiega tecniche di analisi statistica applicata alla qualità, usando Python per gestire e modellare i dati.";
-I18N.it["proj.qda.download"] = "Scarica PDF";
-I18N.it["common.back"] = "← Torna al portfolio";
+I18N.it["proj.qda.title"] = "Analisi Statistica dei Dati con Python",
+I18N.it["proj.qda.desc"] = "Questo progetto spiega tecniche di analisi statistica applicata alla qualità, usando Python per gestire e modellare i dati.",
+I18N.it["proj.qda.download"] = "Scarica PDF",
+I18N.it["common.back"] = "← Torna al portfolio",
 
     "proj.details": "Dettagli",
     "lang.title": "Lingue",
@@ -207,10 +207,10 @@ I18N.it["common.back"] = "← Torna al portfolio";
 "fml.download": "Descargar informe (PDF)",
 
 // --- qda: ES ---
-I18N.es["proj.qda.title"] = "Análisis Estadístico de Datos con Python";
-I18N.es["proj.qda.desc"] = "Este proyecto explica técnicas de análisis estadístico aplicadas a la calidad, usando Python para gestionar y modelar los datos.";
-I18N.es["proj.qda.download"] = "Descargar PDF";
-I18N.es["common.back"] = "← Volver al portafolio";
+I18N.es["proj.qda.title"] = "Análisis Estadístico de Datos con Python",
+I18N.es["proj.qda.desc"] = "Este proyecto explica técnicas de análisis estadístico aplicadas a la calidad, usando Python para gestionar y modelar los datos.",
+I18N.es["proj.qda.download"] = "Descargar PDF",
+I18N.es["common.back"] = "← Volver al portafolio",
   
     "proj.details": "Detalles",
     "lang.title": "Idiomas",
@@ -329,10 +329,10 @@ I18N.es["common.back"] = "← Volver al portafolio";
 "fml.download": "Download report (PDF)",
 
 // --- qda: EN --  
-I18N.en["proj.qda.title"] = "Statistical Data Analysis with Python";
-I18N.en["proj.qda.desc"] = "This project explains statistical data analysis techniques applied to quality, using Python for data management and modeling.";
-I18N.en["proj.qda.download"] = "Download PDF";
-I18N.en["common.back"] = "← Back to portfolio";
+I18N.en["proj.qda.title"] = "Statistical Data Analysis with Python",
+I18N.en["proj.qda.desc"] = "This project explains statistical data analysis techniques applied to quality, using Python for data management and modeling.",
+I18N.en["proj.qda.download"] = "Download PDF",
+I18N.en["common.back"] = "← Back to portfolio",
   
     "proj.details": "Details",
     "lang.title": "Languages",
