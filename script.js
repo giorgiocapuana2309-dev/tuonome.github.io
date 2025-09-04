@@ -85,6 +85,13 @@ const I18N = {
 "fml.conclusion": "In sintesi: duplicando le stazioni critiche (Robot e poi Front Cover) si ottiene un deciso salto di performance senza spostare il collo di bottiglia, massimizzando il ROI del redesign.",
 "fml.download": "Scarica report (PDF)",
 
+
+ "site.title": "Portfolio - Giorgio Capuana",
+    "proj.qda.title": "Analisi Statistica dei Dati con Python",
+    "proj.qda.desc": "Questo progetto spiega tecniche di analisi statistica applicata alla qualità, usando Python per gestire e modellare i dati.",
+    "proj.qda.download": "Scarica PDF",
+    "common.back": "← Torna al portfolio"
+  
     "proj.details": "Dettagli",
     "lang.title": "Lingue",
     "lang.body": "Ho una forte passione per le lingue e la comunicazione interculturale. Oltre all'italiano, parlo <strong>spagnolo</strong> e <strong>inglese</strong> a livello avanzato (C1). Nel breve periodo inizierò a studiare <strong>francese</strong>.",
@@ -199,7 +206,13 @@ const I18N = {
 "fml.res_5": "Dimensionamiento de buffers: 21 espacios distribuidos en las colas operativas.",
 "fml.conclusion": "En síntesis: duplicando las estaciones críticas (Robot y luego Front Cover) se logra un salto de rendimiento sin mover el cuello de botella, maximizando el ROI del rediseño.",
 "fml.download": "Descargar informe (PDF)",
-  
+
+"site.title": "Portafolio - Giorgio Capuana",
+"proj.qda.title": "Análisis Estadístico de Datos con Python",
+"proj.qda.desc": "Este proyecto explica técnicas de análisis estadístico aplicadas a la calidad, usando Python para gestionar y modelar los datos.",
+"proj.qda.download": "Descargar PDF",
+"common.back": "← Volver al portafolio"
+    
     "proj.details": "Detalles",
     "lang.title": "Idiomas",
     "lang.body": "Me apasionan los idiomas y la comunicación intercultural. Además del italiano, hablo <strong>español</strong> e <strong>inglés</strong> a nivel avanzado (C1). Empezaré a estudiar <strong>francés</strong> en el corto plazo.",
@@ -315,6 +328,12 @@ const I18N = {
 "fml.res_5": "Overall buffer sizing: 21 slots distributed over the operating queues.",
 "fml.conclusion": "In short: by duplicating the critical stations (Robot and then Front Cover) you get a clear performance jump without shifting the bottleneck, maximising redesign ROI.",
 "fml.download": "Download report (PDF)",
+
+"site.title": "Portfolio - Giorgio Capuana",
+"proj.qda.title": "Statistical Data Analysis with Python",
+"proj.qda.desc": "This project explains statistical data analysis techniques applied to quality, using Python for data management and modeling.",
+"proj.qda.download": "Download PDF",
+"common.back": "← Back to portfolio",
   
     "proj.details": "Details",
     "lang.title": "Languages",
@@ -349,29 +368,7 @@ const I18N = {
   }
 };
 
-const I18N = {
-  it: {
-    "site.title": "Portfolio - Giorgio Capuana",
-    "proj.qda.title": "Analisi Statistica dei Dati con Python",
-    "proj.qda.desc": "Questo progetto spiega tecniche di analisi statistica applicata alla qualità, usando Python per gestire e modellare i dati.",
-    "proj.qda.download": "Scarica PDF",
-    "common.back": "← Torna al portfolio"
-  },
-  es: {
-    "site.title": "Portafolio - Giorgio Capuana",
-    "proj.qda.title": "Análisis Estadístico de Datos con Python",
-    "proj.qda.desc": "Este proyecto explica técnicas de análisis estadístico aplicadas a la calidad, usando Python para gestionar y modelar los datos.",
-    "proj.qda.download": "Descargar PDF",
-    "common.back": "← Volver al portafolio"
-  },
-  en: {
-    "site.title": "Portfolio - Giorgio Capuana",
-    "proj.qda.title": "Statistical Data Analysis with Python",
-    "proj.qda.desc": "This project explains statistical data analysis techniques applied to quality, using Python for data management and modeling.",
-    "proj.qda.download": "Download PDF",
-    "common.back": "← Back to portfolio"
-  }
-};
+ 
 
 // ---------- Applica dizionario ----------
 function applyI18n(lang) {
