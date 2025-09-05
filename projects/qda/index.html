@@ -8,14 +8,18 @@
   <!-- CSS corretto -->
   <link rel="stylesheet" href="../../style.css">
   <style>
- <style>
+<style>
 .carousel {
   position: relative;
-  width: 100%;
-  max-width: 800px; /* larghezza massima del carousel */
-  margin: 1rem auto;
+  max-width: 700px;  /* larghezza massima */
+  margin: 1.5rem auto;
   overflow: hidden;
   border-radius: 10px;
+}
+
+.carousel-track-container {
+  overflow: hidden;
+  width: 100%;
 }
 
 .carousel-track {
@@ -24,17 +28,39 @@
 }
 
 .carousel-slide {
-  flex: 0 0 100%; /* ogni slide occupa tutto lo spazio del carousel */
+  min-width: 100%;  /* una foto alla volta */
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .carousel-slide img {
-  width: 90%;   /* immagini più grandi */
-  max-height: 400px;
+  width: 80%;      /* via intermedia */
+  max-height: 350px;
   object-fit: contain;
   border-radius: 8px;
+}
+
+/* Pulsanti */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
 }
 </style>
 </head>
@@ -78,19 +104,23 @@
       </header>
 
        <!-- Gallery -->
-      <section class="gallery">
-        <h2>Preview grafici</h2>
-        <div class="carousel">
-          <div class="carousel-track">
-            <div class="carousel-slide"><img src="1.jpg" alt="Grafico 1"></div>
-            <div class="carousel-slide"><img src="2.jpg" alt="Grafico 2"></div>
-            <div class="carousel-slide"><img src="3.jpg" alt="Grafico 3"></div>
-            <div class="carousel-slide"><img src="4.jpg" alt="Grafico 4"></div>
-            <div class="carousel-slide"><img src="5.jpg" alt="Grafico 5"></div>
-            <div class="carousel-slide"><img src="6.jpg" alt="Grafico 6"></div>
-          </div>
-        </div>
-      </section>
+<section class="gallery">
+  <h2>Preview grafici</h2>
+  <div class="carousel">
+    <button class="carousel-btn prev">&#10094;</button>
+    <div class="carousel-track-container">
+      <ul class="carousel-track">
+        <li class="carousel-slide"><img src="1.jpg" alt="Grafico 1"></li>
+        <li class="carousel-slide"><img src="2.jpg" alt="Grafico 2"></li>
+        <li class="carousel-slide"><img src="3.jpg" alt="Grafico 3"></li>
+        <li class="carousel-slide"><img src="4.jpg" alt="Grafico 4"></li>
+        <li class="carousel-slide"><img src="5.jpg" alt="Grafico 5"></li>
+        <li class="carousel-slide"><img src="6.jpg" alt="Grafico 6"></li>
+      </ul>
+    </div>
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+</section>
       
       <!-- Pulsanti -->
       <div class="btnrow">
@@ -106,20 +136,36 @@
   </main>
 
   <script src="../../script.js?v=6"></script>
-  <script>
+ <script>
 const track = document.querySelector('.carousel-track');
 const slides = Array.from(track.children);
-let index = 0;
+const nextButton = document.querySelector('.carousel-btn.next');
+const prevButton = document.querySelector('.carousel-btn.prev');
 
-function nextSlide() {
-  index++;
-  if(index >= slides.length) index = 0;
+let currentIndex = 0;
+
+function updateSlidePosition() {
   const slideWidth = slides[0].getBoundingClientRect().width;
-  track.style.transform = `translateX(-${slideWidth * index}px)`;
+  track.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
 }
 
-// Scorrimento automatico ogni 3 secondi
-setInterval(nextSlide, 3000);
+// Pulsante avanti
+nextButton.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  updateSlidePosition();
+});
+
+// Pulsante indietro
+prevButton.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  updateSlidePosition();
+});
+
+// Scroll automatico ogni 3 secondi
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  updateSlidePosition();
+}, 3000);
 </script>
 </body>
 </html>
