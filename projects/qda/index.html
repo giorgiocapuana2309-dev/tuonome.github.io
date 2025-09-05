@@ -7,6 +7,37 @@
   <meta name="description" content="Analisi statistica applicata alla qualità, con codice Python.">
   <!-- CSS corretto -->
   <link rel="stylesheet" href="../../style.css">
+  <style>
+  /* Stile gallery QDA */
+  .gallery {
+    margin: 2rem 0;
+  }
+
+  .gallery h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .image-grid img {
+    width: 100%;       /* occuperanno tutta la cella della griglia */
+    height: 150px;     /* altezza fissa uguale per tutte */
+    object-fit: cover; /* mantiene proporzioni e ritaglia dove serve */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+  }
+
+  .image-grid img:hover {
+    transform: scale(1.05);
+  }
+</style>
 </head>
 
 <body>
