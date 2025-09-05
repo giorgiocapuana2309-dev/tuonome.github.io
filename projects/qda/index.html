@@ -9,40 +9,32 @@
   <link rel="stylesheet" href="../../style.css">
   <style>
  <style>
-.scroll-gallery {
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* larghezza massima del carousel */
+  margin: 1rem auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-track {
   display: flex;
-  overflow-x: auto;
-  gap: 1rem;
-  padding: 1rem 0;
-  scroll-behavior: smooth;
+  transition: transform 0.5s ease-in-out;
 }
 
-.scroll-gallery::-webkit-scrollbar {
-  height: 8px;
+.carousel-slide {
+  flex: 0 0 100%; /* ogni slide occupa tutto lo spazio del carousel */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.scroll-gallery::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,0.3);
-  border-radius: 4px;
-}
-
-.scroll-gallery::-webkit-scrollbar-track {
-  background: rgba(0,0,0,0.05);
-  border-radius: 4px;
-}
-
-.scroll-gallery img {
-  flex: 0 0 auto; /* evita che si ridimensionino in base al contenitore */
-  width: 150px;    /* larghezza uniforme */
-  height: 100px;   /* altezza uniforme */
-  object-fit: cover;
+.carousel-slide img {
+  width: 90%;   /* immagini più grandi */
+  max-height: 400px;
+  object-fit: contain;
   border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
-  transition: transform 0.2s ease;
-}
-
-.scroll-gallery img:hover {
-  transform: scale(1.05);
 }
 </style>
 </head>
