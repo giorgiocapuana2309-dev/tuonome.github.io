@@ -8,7 +8,7 @@
   <!-- CSS corretto -->
   <link rel="stylesheet" href="../../style.css">
   <style>
-  /* Stile gallery QDA */
+  /* Stile gallery QDA ridotta */
   .gallery {
     margin: 2rem 0;
   }
@@ -21,16 +21,16 @@
 
   .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* larghezza minore */
+    gap: 0.5rem; /* spazio ridotto tra le immagini */
   }
 
   .image-grid img {
-    width: 100%;       /* occuperanno tutta la cella della griglia */
-    height: 150px;     /* altezza fissa uguale per tutte */
+    width: 100%;       /* occupa tutta la cella della griglia */
+    height: 80px;      /* altezza ridotta della metà rispetto prima */
     object-fit: cover; /* mantiene proporzioni e ritaglia dove serve */
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2); /* ombra più leggera */
     transition: transform 0.2s ease;
   }
 
