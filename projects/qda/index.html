@@ -8,35 +8,42 @@
   <!-- CSS corretto -->
   <link rel="stylesheet" href="../../style.css">
   <style>
-  /* Stile gallery QDA ridotta */
-  .gallery {
-    margin: 2rem 0;
-  }
+ <style>
+.scroll-gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem 0;
+  scroll-behavior: smooth;
+}
 
-  .gallery h2 {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
+.scroll-gallery::-webkit-scrollbar {
+  height: 8px;
+}
 
-  .image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* larghezza minore */
-    gap: 0.5rem; /* spazio ridotto tra le immagini */
-  }
+.scroll-gallery::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.3);
+  border-radius: 4px;
+}
 
-  .image-grid img {
-    width: 100%;       /* occupa tutta la cella della griglia */
-    height: 80px;      /* altezza ridotta della metà rispetto prima */
-    object-fit: cover; /* mantiene proporzioni e ritaglia dove serve */
-    border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.2); /* ombra più leggera */
-    transition: transform 0.2s ease;
-  }
+.scroll-gallery::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.05);
+  border-radius: 4px;
+}
 
-  .image-grid img:hover {
-    transform: scale(1.05);
-  }
+.scroll-gallery img {
+  flex: 0 0 auto; /* evita che si ridimensionino in base al contenitore */
+  width: 150px;    /* larghezza uniforme */
+  height: 100px;   /* altezza uniforme */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.scroll-gallery img:hover {
+  transform: scale(1.05);
+}
 </style>
 </head>
 
