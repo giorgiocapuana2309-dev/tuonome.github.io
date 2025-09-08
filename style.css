@@ -57,3 +57,22 @@
   font-weight:600;
 }
 .specs tr:last-child th, .specs tr:last-child td{ border-bottom:none; }
+.topics {
+  margin-top: 2rem;
+}
+
+.topics h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.topics ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.topics ul ul {
+  list-style-type: circle;
+  padding-left: 1.5rem;
+}
