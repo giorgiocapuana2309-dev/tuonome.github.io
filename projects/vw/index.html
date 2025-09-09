@@ -7,22 +7,56 @@
   <meta name="description" content="Report PDF sul gruppo Volkswagen in un contesto competitivo.">
   <link rel="stylesheet" href="../../style.css" />
   <style>
-    .actions { display:flex; gap:.75rem; flex-wrap:wrap; align-items:center; }
-    .actions .push-right { margin-left:auto; }
+    /* ——— aggiunte locali, non toccano il tuo style.css ——— */
+    .page-header { padding: 1rem 0; }
+    .actions-top { display:flex; align-items:center; }
+    .actions-top .push-right { margin-left:auto; }
+
+    /* Se nel tuo CSS esiste già .btn, qui aggiungo SOLO varianti di colore */
+    .btn.btn-primary { 
+      background: var(--primary, #2563eb) !important; 
+      color: #fff !important; 
+      border-color: transparent !important;
+    }
+    .btn.btn-primary:hover { filter: brightness(0.95); }
+
+    .btn.btn-dark { 
+      background: #111 !important; 
+      color: #fff !important; 
+      border-color: transparent !important;
+    }
+    .btn.btn-dark:hover { filter: brightness(1.05); }
+
+    /* sezione CTA in basso */
+    .section-cta { 
+      margin-top: 2rem; 
+      padding: 1.25rem 0 2rem; 
+      border-top: 1px solid var(--border, #e5e7eb); 
+    }
   </style>
 </head>
 <body>
   <header class="page-header container">
-    <div class="actions">
-      <a class="btn" href="./GROUP_25_finalversion.pdf" download>Scarica PDF</a>
-      <a class="btn push-right" href="../../index.html">← Torna al portfolio</a>
+    <div class="actions-top">
+      <!-- SOLO torna al portfolio in alto, come bottone nero -->
+      <a class="btn btn-dark" href="../../index.html">← Torna al portfolio</a>
+      <span class="push-right"></span>
     </div>
   </header>
 
   <main class="container">
     <section class="hero">
       <h1>Analisi finanziaria: gruppo Volkswagen in un contesto competitivo</h1>
-      <p class="lead">Accesso diretto al report completo in PDF.</p>
+      <p class="lead">
+        Questa pagina offre l’accesso diretto al report completo in PDF. In seguito potremo aggiungere anteprima, estratti e grafici.
+      </p>
+    </section>
+
+    <!-- eventuali altre sezioni contenuto... -->
+
+    <!-- CTA in basso: bottone principale per scaricare il PDF -->
+    <section class="section section-cta">
+      <a class="btn btn-primary" href="./GROUP_25_finalversion.pdf" download>Scarica PDF</a>
     </section>
   </main>
 
