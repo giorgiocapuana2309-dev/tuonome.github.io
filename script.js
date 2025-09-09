@@ -104,7 +104,7 @@ const I18N = {
 "qda.topics.sub.ewma": "Carte di controllo EWMA",
 "qda.topics.item.outliers_missing": "Rilevamento outlier e gestione dei dati mancanti",
 "qda.topics.item.multivariate_analysis": "Analisi statistica multivariata (ACP, clustering)",
-"qda.topics.item.evaluation_interpretation": "Valutazione e interpretazione dei risultati per decisioni di qualità"
+"qda.topics.item.evaluation_interpretation": "Valutazione e interpretazione dei risultati per decisioni di qualità",
     
 "site.title": "Portfolio - Giorgio Capuana",
     "proj.qda.title": "Analisi Statistica dei Dati con Python",
@@ -246,7 +246,7 @@ const I18N = {
 "qda.topics.sub.ewma": "Gráficas de control EWMA",
 "qda.topics.item.outliers_missing": "Detección de outliers y gestión de datos faltantes",
 "qda.topics.item.multivariate_analysis": "Análisis estadístico multivariante (ACP/PCA, clustering)",
-"qda.topics.item.evaluation_interpretation": "Evaluación e interpretación de resultados para decisiones de calidad"
+"qda.topics.item.evaluation_interpretation": "Evaluación e interpretación de resultados para decisiones de calidad",
   
 "site.title": "Portafolio - Giorgio Capuana",
     "proj.qda.title": "Análisis Estadístico de Datos con Python",
@@ -389,7 +389,7 @@ const I18N = {
 "qda.topics.sub.ewma": "EWMA control charts",
 "qda.topics.item.outliers_missing": "Outlier detection and missing-data handling",
 "qda.topics.item.multivariate_analysis": "Multivariate statistical analysis (PCA, clustering)",
-"qda.topics.item.evaluation_interpretation": "Evaluation and interpretation of results for quality decisions"
+"qda.topics.item.evaluation_interpretation": "Evaluation and interpretation of results for quality decisions",
   
     "site.title": "Portfolio - Giorgio Capuana",
     "proj.qda.title": "Statistical Data Analysis with Python",
