@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="ip.page_title">
+    INNOVATION  PROJECT: Empower the future through IoT driven  digital shift and green energy
+  </title>
+  <link rel="stylesheet" href="../../style.css" />
+  <style>
+    /* — Carousel stile QDA/FML — */
+    .carousel{position:relative;max-width:700px;margin:1.5rem auto;overflow:hidden;border-radius:10px}
+    .carousel-track-container{overflow:hidden;width:100%}
+    .carousel-track{display:flex;transition:transform .5s ease-in-out}
+    .carousel-slide{min-width:100%;display:flex;justify-content:center}
+    .carousel-slide img{width:80%;max-height:350px;object-fit:contain;border-radius:8px}
+    .carousel-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.5);border:0;color:#fff;
+      font-size:2rem;padding:.3rem .8rem;cursor:pointer;border-radius:50%;z-index:10}
+    .carousel-btn.prev{left:10px} .carousel-btn.next{right:10px}
+    @media (max-width:640px){.carousel-slide img{max-height:280px;width:90%}}
+
+    /* — Bottoni in basso — */
+    .section-cta{margin-top:2rem;padding:1.25rem 0 2rem;border-top:1px solid var(--border,#e5e7eb)}
+    .cta-actions{display:flex;gap:.75rem;flex-wrap:wrap;align-items:center}
+    .btn.btn-primary{background:var(--primary,#2563eb)!important;color:#fff!important;border-color:transparent!important}
+    .btn.btn-primary:hover{filter:brightness(.95)}
+    .btn.btn-dark{background:#111!important;color:#fff!important;border-color:transparent!important}
+    .btn.btn-dark:hover{filter:brightness(1.05)}
+
+    /* Navbar helpers (se già presenti in style.css, questi non danno fastidio) */
+    .site-header .nav-row{display:flex;align-items:center;gap:1rem}
+    .site-header .brand{font-weight:700;text-decoration:none;display:flex;align-items:center;gap:.5rem}
+    .site-header .brand .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--primary,#6b5cff);display:inline-block}
+    .site-header nav{margin-left:auto;display:flex;gap:2rem}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="site-header">
+    <div class="container nav-row">
+      <a href="../../index.html" class="brand">
+        <span class="dot"></span> Giorgio Capuana
+      </a>
+      <nav class="main-nav">
+        <a href="../../index.html#about" data-i18n="nav.about">Chi sono</a>
+        <a href="../../index.html#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="../../index.html#languages" data-i18n="nav.languages">Lingue</a>
+        <a href="../../index.html#contact" data-i18n="nav.contact">Contatti</a>
+      </nav>
+      <div class="lang">
+        <label for="lang" class="sr-only" data-i18n="lang.select_label">Scegli lingua</label>
+        <select id="lang" class="lang-select" aria-label="Selettore lingua">
+          <option value="it">Italiano</option>
+          <option value="es">Español</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <h1 data-i18n="ip.page_title">
+        INNOVATION  PROJECT: Empower the future through IoT driven  digital shift and green energy
+      </h1>
+      <p class="lead" data-i18n="ip.lead">
+        Preview del progetto e accesso al report completo in PDF.
+      </p>
+    </section>
+
+    <!-- Gallery (5 immagini) -->
+    <section class="gallery">
+      <h2 data-i18n="ip.gallery_title">Preview immagini</h2>
+      <div class="carousel">
+        <button class="carousel-btn prev" aria-label="Slide precedente">&#10094;</button>
+        <div class="carousel-track-container">
+          <ul class="carousel-track">
+            <li class="carousel-slide"><img src="img/1.jpg" alt="Slide 1" loading="lazy" draggable="false"></li>
+            <li class="carousel-slide"><img src="img/2.jpg" alt="Slide 2" loading="lazy" draggable="false"></li>
+            <li class="carousel-slide"><img src="img/3.jpg" alt="Slide 3" loading="lazy" draggable="false"></li>
+            <li class="carousel-slide"><img src="img/4.jpg" alt="Slide 4" loading="lazy" draggable="false"></li>
+            <li class="carousel-slide"><img src="img/5.jpg" alt="Slide 5" loading="lazy" draggable="false"></li>
+          </ul>
+        </div>
+        <button class="carousel-btn next" aria-label="Slide successiva">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- CTA in basso -->
+    <section class="section section-cta">
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="./IP_report.pdf" download data-i18n="ip.download">Scarica PDF</a>
+        <a class="btn btn-dark" href="../../index.html" data-i18n="common.back">← Torna al portfolio</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="../../script.js?v=7"></script>
+  <script>
+    // Carousel stile QDA
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(track.children);
+    const nextButton = document.querySelector('.carousel-btn.next');
+    const prevButton = document.querySelector('.carousel-btn.prev');
+
+    let currentIndex = 0;
+    function updateSlidePosition(){
+      const slideWidth = slides[0].getBoundingClientRect().width;
+      track.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+    }
+    nextButton.addEventListener('click', ()=>{ currentIndex = (currentIndex+1)%slides.length; updateSlidePosition(); });
+    prevButton.addEventListener('click', ()=>{ currentIndex = (currentIndex-1+slides.length)%slides.length; updateSlidePosition(); });
+
+    let timer = setInterval(()=>{ currentIndex = (currentIndex+1)%slides.length; updateSlidePosition(); }, 3000);
+    const carousel = document.querySelector('.carousel');
+    carousel.addEventListener('mouseenter', ()=>clearInterval(timer));
+    carousel.addEventListener('mouseleave', ()=>{
+      timer = setInterval(()=>{ currentIndex = (currentIndex+1)%slides.length; updateSlidePosition(); }, 3000);
+    });
+    window.addEventListener('resize', updateSlidePosition);
+    updateSlidePosition();
+  </script>
+</body>
+</html>
