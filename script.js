@@ -86,6 +86,8 @@ const I18N = {
 "fml.download": "Scarica report (PDF)",
 
 // --- QDA: Topics (IT) ---
+"proj.c.title": "Analisi finanziaria: gruppo Volkswagen in un contesto competitivo",
+"proj.c.desc": "Valutazione economico-finanziaria del gruppo Volkswagen rispetto ai principali concorrenti, con focus su redditività, struttura patrimoniale, cash flow ed efficienza operativa.",
 "qda.topics.title": "Argomenti trattati",
 "qda.topics.item.desc_stats": "Analisi descrittiva dei dati (media, mediana, moda, varianza, deviazione standard)",
 "qda.topics.item.normality_tests": "Test di normalità (Shapiro–Wilk, Kolmogorov–Smirnov)",
@@ -277,7 +279,9 @@ const I18N = {
 "qda.topics.item.multivariate_analysis": "Análisis estadístico multivariante (ACP/PCA, clustering)",
 "qda.topics.item.evaluation_interpretation": "Evaluación e interpretación de resultados para decisiones de calidad",
 
- // --- vw (ES) ---  
+ // --- vw (ES) ---
+"proj.c.title": "Análisis financiero: Grupo Volkswagen en un contexto competitivo",
+"proj.c.desc": "Evaluación económico-financiera del Grupo Volkswagen frente a los principales competidores, con foco en rentabilidad, estructura patrimonial, flujo de caja y eficiencia operativa.",
 "vw.page_title": "Análisis financiero: Grupo Volkswagen en un contexto competitivo",
 "vw.lead": "Esta página ofrece acceso directo al informe completo en PDF. Más adelante podremos añadir vista previa, extractos y gráficos.",
 "vw.desc_title": "Descripción del proyecto",
@@ -449,7 +453,9 @@ const I18N = {
 "qda.topics.item.multivariate_analysis": "Multivariate statistical analysis (PCA, clustering)",
 "qda.topics.item.evaluation_interpretation": "Evaluation and interpretation of results for quality decisions",
 
-// --- vw (EN) --- 
+// --- vw (EN) ---
+"proj.c.title": "Financial analysis: Volkswagen Group in a competitive context",
+"proj.c.desc": "Economic–financial assessment of Volkswagen Group versus key competitors, focusing on profitability, balance-sheet structure, cash flow and operating efficiency.",
 "vw.page_title": "Financial analysis: Volkswagen Group in a competitive context",
 "vw.lead": "This page provides direct access to the full report in PDF. We can later add previews, excerpts and charts.",
 "vw.desc_title": "Project description",
