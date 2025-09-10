@@ -170,47 +170,47 @@
      <a class="btn ghost" href="../../#portfolio" data-i18n="common.back">← Torna al portfolio</a>
       </div>
 
+  <!-- ⬇️ QUI incolla lo script del carousel stile QDA -->
   <script>
-    // Slider semplice con autoplay + dots + frecce
-    (function(){
-      const track = document.getElementById('slides');
-      const slides = Array.from(track.children);
-      const dotsWrap = document.getElementById('dots');
-      const prev = document.getElementById('prev');
-      const next = document.getElementById('next');
-      const carousel = document.getElementById('carousel');
-      let i = 0, timer;
+    // Carousel stile QDA
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(track.children);
+    const nextButton = document.querySelector('.carousel-btn.next');
+    const prevButton = document.querySelector('.carousel-btn.prev');
 
-      function goTo(n){
-        i = (n + slides.length) % slides.length;
-        track.style.transform = `translateX(-${i*100}%)`;
-        updateDots();
-      }
-      function updateDots(){
-        dotsWrap.querySelectorAll('.dot').forEach((d,idx)=>{
-          d.classList.toggle('active', idx===i);
-        });
-      }
-      // Dots
-      slides.forEach((_,idx)=>{
-        const b = document.createElement('button');
-        b.className = 'dot';
-        b.setAttribute('aria-label', 'Vai alla slide ' + (idx+1));
-        b.addEventListener('click', ()=>goTo(idx));
-        dotsWrap.appendChild(b);
-      });
-      updateDots();
+    let currentIndex = 0;
 
-      // Frecce
-      prev.addEventListener('click', ()=>goTo(i-1));
-      next.addEventListener('click', ()=>goTo(i+1));
+    function updateSlidePosition() {
+      const slideWidth = slides[0].getBoundingClientRect().width;
+      track.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+    }
 
-      function start(){ timer = setInterval(()=>goTo(i+1), 4000); }
-      function stop(){ clearInterval(timer); }
-      carousel.addEventListener('mouseenter', stop);
-      carousel.addEventListener('mouseleave', start);
-      start();
-    })();
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateSlidePosition();
+    });
+
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateSlidePosition();
+    });
+
+    let timer = setInterval(() => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateSlidePosition();
+    }, 3000);
+
+    const carousel = document.querySelector('.carousel');
+    carousel.addEventListener('mouseenter', () => clearInterval(timer));
+    carousel.addEventListener('mouseleave', () => {
+      timer = setInterval(() => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSlidePosition();
+      }, 3000);
+    });
+
+    window.addEventListener('resize', updateSlidePosition);
+    updateSlidePosition();
   </script>
 </body>
 </html>
