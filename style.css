@@ -127,3 +127,36 @@ select#lang::-ms-expand,
   opacity: .6;
   cursor: not-allowed;
 }
+/* ===== Thesis page additions ===== */
+.logo-bar{display:flex;gap:24px;align-items:center;justify-content:center;margin-top:-8px}
+.logo-bar figure{margin:0;text-align:center}
+.logo-bar img{height:52px;max-width:180px;object-fit:contain;filter:grayscale(100%);opacity:.9}
+.logo-bar figcaption{font-size:.85rem;color:#aeb7c4;margin-top:6px}
+.logo-bar .sep{opacity:.5;font-size:1.6rem}
+
+.toc ul{list-style:none;margin:0;padding:0}
+.toc li{margin-bottom:6px}
+.toc a{display:block;padding:8px 10px;border-radius:10px;border:1px solid var(--line, #232c3d);color:#cbd5e1;text-decoration:none}
+.toc a:hover{background:rgba(255,255,255,.04)}
+
+.sticky{position:sticky;top:84px}
+
+.chapters details{border:1px solid var(--line, #232c3d);border-radius:12px;padding:12px 14px;margin-bottom:12px;background:var(--card,#121824)}
+.chapters summary{cursor:pointer;display:flex;align-items:center;gap:8px;font-weight:600}
+.chapters summary::-webkit-details-marker{display:none}
+.chapters .chev{width:10px;height:10px;border-right:2px solid #aeb7c4;border-bottom:2px solid #aeb7c4;transform:rotate(-45deg);transition:transform .2s}
+.chapters details[open] .chev{transform:rotate(45deg)}
+
+.carousel{position:relative;overflow:hidden}
+.carousel-track{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth}
+.carousel-track img{flex:0 0 100%;max-height:60vh;width:100%;object-fit:cover;scroll-snap-align:center;border-radius:16px}
+.carousel .nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.35);border:1px solid var(--line,#232c3d);
+  color:#fff;border-radius:999px;width:40px;height:40px;line-height:38px;text-align:center;font-size:22px}
+.carousel .prev{left:10px}
+.carousel .next{right:10px}
+.dots{display:flex;justify-content:center;gap:6px;padding:12px}
+.dots button{width:8px;height:8px;border-radius:999px;border:1px solid var(--line,#232c3d);background:#7c8697;opacity:.5}
+.dots button.active{opacity:1;background:#fff}
+
+.pdf-viewer iframe{width:100%;height:82vh;border:0;border-radius:12px}
+.small{font-size:.9rem}.muted{color:#aeb7c4}
