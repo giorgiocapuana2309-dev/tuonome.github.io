@@ -185,7 +185,7 @@ const I18N = {
 "thesis.method.title":"Metodologia",
 "thesis.results.title":"Risultati principali",
 "thesis.gallery.title":"Highlight visivi",
-"thesis.conclusion.title":"Conclusioni & Learnings"
+"thesis.conclusion.title":"Conclusioni & Learnings",
     
 "site.title": "Portfolio - Giorgio Capuana",
     "proj.qda.title": "Analisi Statistica dei Dati con Python",
