@@ -166,7 +166,7 @@ const I18N = {
 "ip.t_i2":"Composizione personalità (16Personalities): Analysts, Diplomats e Sentinels; uso di Managerial Grid e Full-Range Model per la leadership.",
 "ip.t_i3":"Evoluzione verso leadership situazionale: dal confronto iniziale all’allineamento su ruoli e obiettivi, con collaborazione e feedback continui.",
 "ip.t_i4":"Ambiente internazionale: confronto culturale e metodi di lavoro diversi hanno favorito creatività, problem solving e apprendimento reciproco.",
-"ip.t_i5":"Supervisione e feedback da rappresentanti Prysmian (brief a cura di Ing. Nicola Imbimbo) e faculty PoliMi (Prof. Emilio Bellini, Tutor Alessandro Biffi)."
+"ip.t_i5":"Supervisione e feedback da rappresentanti Prysmian (brief a cura di Ing. Nicola Imbimbo) e faculty PoliMi (Prof. Emilio Bellini, Tutor Alessandro Biffi).",
     
 "site.title": "Portfolio - Giorgio Capuana",
     "proj.qda.title": "Analisi Statistica dei Dati con Python",
@@ -370,7 +370,7 @@ const I18N = {
 "ip.t_i2":"Personalidades (16Personalities): Analysts, Diplomats y Sentinels; uso de Managerial Grid y Full-Range Model.",
 "ip.t_i3":"Evolución hacia liderazgo situacional: del debate inicial al alineamiento en roles y objetivos con colaboración continua.",
 "ip.t_i4":"Entorno internacional: diversidad cultural y de métodos fomentó creatividad, resolución de problemas y aprendizaje mutuo.",
-"ip.t_i5":"Supervisión y feedback de representantes de Prysmian (brief por Ing. Nicola Imbimbo) y faculty de PoliMi (Prof. Emilio Bellini, Tutor Alessandro Biffi)."
+"ip.t_i5":"Supervisión y feedback de representantes de Prysmian (brief por Ing. Nicola Imbimbo) y faculty de PoliMi (Prof. Emilio Bellini, Tutor Alessandro Biffi).",
     
 "site.title": "Portafolio - Giorgio Capuana",
     "proj.qda.title": "Análisis Estadístico de Datos con Python",
@@ -575,7 +575,7 @@ const I18N = {
 "ip.t_i2":"Personality mix (16Personalities): Analysts, Diplomats and Sentinels; use of Managerial Grid and Full-Range Model.",
 "ip.t_i3":"Shift towards situational leadership: from initial debate to alignment on roles and goals through continuous collaboration.",
 "ip.t_i4":"International setting: cultural and methodological diversity boosted creativity, problem-solving and mutual learning.",
-"ip.t_i5":"Supervision and feedback from Prysmian representatives (brief by Eng. Nicola Imbimbo) and PoliMi faculty (Prof. Emilio Bellini, Tutor Alessandro Biffi)."
+"ip.t_i5":"Supervision and feedback from Prysmian representatives (brief by Eng. Nicola Imbimbo) and PoliMi faculty (Prof. Emilio Bellini, Tutor Alessandro Biffi).",
     
     "site.title": "Portfolio - Giorgio Capuana",
     "proj.qda.title": "Statistical Data Analysis with Python",
