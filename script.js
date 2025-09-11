@@ -167,6 +167,25 @@ const I18N = {
 "ip.t_i3":"Evoluzione verso leadership situazionale: dal confronto iniziale all’allineamento su ruoli e obiettivi, con collaborazione e feedback continui.",
 "ip.t_i4":"Ambiente internazionale: confronto culturale e metodi di lavoro diversi hanno favorito creatività, problem solving e apprendimento reciproco.",
 "ip.t_i5":"Supervisione e feedback da rappresentanti Prysmian (brief a cura di Ing. Nicola Imbimbo) e faculty PoliMi (Prof. Emilio Bellini, Tutor Alessandro Biffi).",
+
+// --- thesis (IT) ---    
+"proj.thesis.title":"Tesi triennale & Internship – Pony S.p.A.",
+"proj.thesis.desc":"Redesign del metodo di assemblaggio e transizione 4.0 con MES, BeeComs e AMR; analisi economica dell’investimento.",
+"proj.thesis.tag1":"Industry 4.0",
+"proj.thesis.tag2":"Operations",
+"proj.thesis.tag3":"AMR & MES",
+"thesis.meta.title":"Bachelor Thesis & Internship – Assembly method redesign @ Pony S.p.A.",
+"thesis.meta.desc":"Redesign assemblaggio con AMR, integrazione MES/BeeComs e business case presso Pony S.p.A. (Milano).",
+"thesis.hero.title":"Bachelor Thesis & Pre-graduating Internship – Pony S.p.A. (Milano)",
+"thesis.hero.lead":"3 mesi di internship + 5 mesi di mentoring; redesign dell’assemblaggio con AMR Agilox, integrazione MES/BeeComs e valutazione economica.",
+"thesis.overview.title":"Overview",
+"thesis.sidebar.title":"Dettagli rapidi",
+"thesis.sidebar.cta":"Scarica tesi (PDF)",
+"thesis.exp.title":"Internship & Mentoring",
+"thesis.method.title":"Metodologia",
+"thesis.results.title":"Risultati principali",
+"thesis.gallery.title":"Highlight visivi",
+"thesis.conclusion.title":"Conclusioni & Learnings"
     
 "site.title": "Portfolio - Giorgio Capuana",
     "proj.qda.title": "Analisi Statistica dei Dati con Python",
@@ -371,6 +390,8 @@ const I18N = {
 "ip.t_i3":"Evolución hacia liderazgo situacional: del debate inicial al alineamiento en roles y objetivos con colaboración continua.",
 "ip.t_i4":"Entorno internacional: diversidad cultural y de métodos fomentó creatividad, resolución de problemas y aprendizaje mutuo.",
 "ip.t_i5":"Supervisión y feedback de representantes de Prysmian (brief por Ing. Nicola Imbimbo) y faculty de PoliMi (Prof. Emilio Bellini, Tutor Alessandro Biffi).",
+
+
     
 "site.title": "Portafolio - Giorgio Capuana",
     "proj.qda.title": "Análisis Estadístico de Datos con Python",
