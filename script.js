@@ -676,20 +676,46 @@ function initI18n() {
   const y = document.getElementById("year");
   if (y) y.textContent = new Date().getFullYear();
 
-  // filtri portfolio
-  const filterButtons = document.querySelectorAll(".filter-btn");
-  const projects = document.querySelectorAll(".project");
-  filterButtons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      filterButtons.forEach(b => { b.classList.remove("active"); b.setAttribute("aria-selected","false"); });
-      btn.classList.add("active"); btn.setAttribute("aria-selected","true");
-      const filter = btn.getAttribute("data-filter");
-      projects.forEach(card => {
-        const tags = (card.getAttribute("data-tags") || "").split(",");
-        card.style.display = (filter === "all" || tags.includes(filter)) ? "" : "none";
+  // --- Filtri portfolio robusti ---
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const projects = document.querySelectorAll(".project");
+    
+    // mappa sinonimi -> token canonici
+    const CANON = {
+      "all": "all",
+      // ingegneria
+      "ingegneria": "ingegneria", "ing": "ingegneria", "engineering": "ingegneria", "eng": "ingegneria",
+      // gestione/finance
+      "gestione": "gestione", "gestione/finance": "gestione", "finance": "gestione",
+      "finanza": "gestione", "mgmt": "gestione", "management": "gestione"
+    };
+    
+    filterButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        // stato attivo
+        filterButtons.forEach(b => { 
+          b.classList.remove("active"); 
+          b.setAttribute("aria-selected", "false"); 
+        });
+        btn.classList.add("active");
+        btn.setAttribute("aria-selected", "true");
+    
+        // normalizza il filtro
+        const raw = (btn.getAttribute("data-filter") || "all").trim().toLowerCase();
+        const filter = CANON[raw] || raw;
+    
+        projects.forEach(card => {
+          // normalizza i tag della card
+          const tags = (card.getAttribute("data-tags") || "")
+            .split(",")
+            .map(s => (CANON[s.trim().toLowerCase()] || s.trim().toLowerCase()))
+            .filter(Boolean);
+    
+          const show = (filter === "all") || tags.includes(filter);
+          card.style.display = show ? "" : "none";
+        });
       });
     });
-  });
 }
 
 // esegui subito se il DOM è già pronto, altrimenti aspetta DOMContentLoaded
