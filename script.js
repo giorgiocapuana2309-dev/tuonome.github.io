@@ -136,6 +136,14 @@ const I18N = {
 "vw.ins_3": "<strong>Resilienza post-shock:</strong> normalizzazione supply-chain/energia come volano per margini e ritorni su R&amp;D.",
 "vw.note": "Nota: i prospetti completi e le tavole <em>common-size</em> sono nel PDF allegato.",
 "vw.download": "Scarica PDF",
+
+// --- IP (IT) ---
+"proj.ip.title": "INNOVATION PROJECT: abilitare il futuro con rivoluzione digitale guidata dall’IoT ed energia green",
+"proj.ip.desc": "Concept e roadmap per l’innovazione: IoT, trasformazione digitale e transizione green applicati a processi e prodotti.",
+"ip.page_title": "INNOVATION  PROJECT: Empower the future through IoT driven  digital shift and green energy",
+"ip.lead": "Preview del progetto e accesso al report completo in PDF.",
+"ip.gallery_title": "Preview immagini",
+"ip.download": "Scarica PDF",
     
 "site.title": "Portfolio - Giorgio Capuana",
     "proj.qda.title": "Analisi Statistica dei Dati con Python",
@@ -309,6 +317,14 @@ const I18N = {
 "vw.ins_3": "<strong>Resiliencia post-shock:</strong> normalización de la cadena de suministro/energía como motor de márgenes y retornos de I+D.",
 "vw.note": "Nota: los estados financieros completos y las tablas <em>common-size</em> están en el PDF adjunto.",
 "vw.download": "Descargar PDF",
+
+// --- IP (ES) ---
+"proj.ip.title": "INNOVATION PROJECT: impulsar el futuro mediante transformación digital basada en IoT y energía verde",
+"proj.ip.desc": "Concepto y hoja de ruta de innovación: IoT, transformación digital y transición verde aplicadas a procesos y productos.",
+"ip.page_title": "INNOVATION  PROJECT: Empower the future through IoT driven  digital shift and green energy",
+"ip.lead": "Vista previa del proyecto y acceso al informe completo en PDF.",
+"ip.gallery_title": "Vista previa de imágenes",
+"ip.download": "Descargar PDF",
     
 "site.title": "Portafolio - Giorgio Capuana",
     "proj.qda.title": "Análisis Estadístico de Datos con Python",
@@ -484,6 +500,13 @@ const I18N = {
 "vw.note": "Note: full financial statements and <em>common-size</em> tables are available in the attached PDF.",
 "vw.download": "Download PDF",
 
+// --- IP (EN) ---
+"proj.ip.title": "INNOVATION  PROJECT: Empower the future through IoT driven  digital shift and green energy",
+"proj.ip.desc": "Innovation concept and roadmap: IoT, digital transformation and green transition applied to processes and products.",    
+"ip.page_title": "INNOVATION  PROJECT: Empower the future through IoT driven  digital shift and green energy",
+"ip.lead": "Project preview and direct access to the full PDF report.",
+"ip.gallery_title": "Image preview",
+"ip.download": "Download PDF",    
     
     "site.title": "Portfolio - Giorgio Capuana",
     "proj.qda.title": "Statistical Data Analysis with Python",
