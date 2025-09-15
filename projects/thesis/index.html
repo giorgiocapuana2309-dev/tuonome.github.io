@@ -10,10 +10,24 @@
         content="Redesign del processo di assemblaggio con AMR, integrazione MES/BeeComs e valutazione d'investimento presso Pony S.p.A. (Milano).">
   <link rel="stylesheet" href="../../style.css">
 </head>
-<body class="theme-dark">
-<header class="topbar">
+<header class="topbar navbar">
   <a class="brand" href="../../index.html">Giorgio Capuana</a>
-  <nav class="nav"><a href="../../index.html#portfolio" data-i18n="nav.portfolio">Portfolio</a></nav>
+
+  <nav class="nav" id="main-nav">
+    <a href="../../index.html#about" data-i18n="nav.about">Chi sono</a>
+    <a href="../../index.html#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+    <a href="../../index.html#contact" data-i18n="nav.contact">Contatti</a>
+  </nav>
+
+  <div class="actions">
+    <label for="lang-select" class="sr-only" data-i18n="lang.select_label">Scegli lingua</label>
+    <select id="lang-select" aria-label="Language">
+      <option value="it">IT</option>
+      <option value="en">EN</option>
+      <option value="es">ES</option>
+    </select>
+    <button class="burger" aria-label="Apri menu" aria-controls="main-nav" aria-expanded="false">☰</button>
+  </div>
 </header>
   
 <main>
