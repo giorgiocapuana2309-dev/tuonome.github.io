@@ -231,48 +231,54 @@
 
   <footer class="footer"><div class="container">© Giorgio Capuana</div></footer>
 
-/* — Carosello stile QDA/FML SOLO per la pagina tesi — */
-.thesis-page #thesis-gallery .carousel{
-  position: relative;
-  max-width: 1100px;                 /* ↑ prima era 700px */
-  margin: 1rem auto;
-  overflow: hidden;
-  border-radius: 16px;
-  background: var(--card, #171923);
-  box-shadow: var(--shadow);
-}
-.thesis-page #thesis-gallery .carousel-track-container{ overflow: hidden; width: 100%; }
-.thesis-page #thesis-gallery .carousel-track{
-  display: flex;
-  transition: transform .5s ease-in-out;
-  list-style: none; margin: 0; padding: 0;   /* importantissimo */
-}
-.thesis-page #thesis-gallery .carousel-slide{
-  min-width: 100%;
-  display: flex; justify-content: center; align-items: center;
-}
-.thesis-page #thesis-gallery .carousel-slide img{
-  width: 95%;
-  max-height: 540px;                  /* ↑ più alto = foto leggibili */
-  object-fit: contain;
-  border-radius: 12px;
-}
-
-.thesis-page #thesis-gallery .carousel-btn{
-  position: absolute; top: 50%; transform: translateY(-50%);
-  background: rgba(0,0,0,.55); color: #fff; border: 0;
-  width: 48px; height: 48px; line-height: 48px; font-size: 28px;
-  border-radius: 999px; cursor: pointer; z-index: 10;
-}
-.thesis-page #thesis-gallery .carousel-btn.prev{ left: 14px; }
-.thesis-page #thesis-gallery .carousel-btn.next{ right: 14px; }
-
-@media (max-width: 900px){
-  .thesis-page #thesis-gallery .carousel-slide img{ max-height: 420px; width: 96%; }
-}
-@media (max-width: 600px){
-  .thesis-page #thesis-gallery .carousel-slide img{ max-height: 320px; }
-  .thesis-page #thesis-gallery .carousel-btn{ width: 40px; height: 40px; font-size: 22px; }
-}
+<script>
+  // Burger mobile (navbar)
+  (function(){
+    const header = document.querySelector('.navbar');
+    if(!header) return;
+    const btn = header.querySelector('.burger');
+    btn.addEventListener('click', () => {
+      const open = header.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+  
+  // Carosello classico per #thesis-gallery
+  (function(){
+    const root   = document.querySelector('#thesis-gallery');
+    if(!root) return;
+  
+    const track  = root.querySelector('.carousel-track');
+    const slides = Array.from(track.children);
+    const prev   = root.querySelector('.carousel-btn.prev');
+    const next   = root.querySelector('.carousel-btn.next');
+  
+    // safety: reset del <ul>
+    track.style.listStyle = 'none';
+    track.style.margin = '0';
+    track.style.padding = '0';
+  
+    let index = 0;
+    function go(i){
+      index = (i + slides.length) % slides.length;
+      track.style.transform = `translateX(-${index * 100}%)`;
+    }
+  
+    prev.addEventListener('click', () => go(index - 1));
+    next.addEventListener('click', () => go(index + 1));
+  
+    // swipe touch
+    let startX = 0;
+    track.addEventListener('touchstart', e => startX = e.touches[0].clientX, {passive:true});
+    track.addEventListener('touchend',   e => {
+      const dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 40) go(index + (dx < 0 ? 1 : -1));
+    });
+  
+    go(0);
+  })();
+  </script>
+</body>
+</html>
 </body>
 </html>
