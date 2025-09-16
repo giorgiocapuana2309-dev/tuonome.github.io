@@ -236,18 +236,6 @@
 
 
   <script>
-  // Burger mobile (navbar)
-    (function(){
-      const header = document.querySelector('.navbar');
-      if(!header) return;
-      const btn = header.querySelector('.burger');
-      btn.addEventListener('click', () => {
-        const open = header.classList.toggle('open');
-        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      });
-    })();
-    
-  
   // Carosello classico per #thesis-gallery
   (function(){
     const root   = document.querySelector('#thesis-gallery');
