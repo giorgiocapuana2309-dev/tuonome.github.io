@@ -147,16 +147,41 @@ select#lang::-ms-expand,
 .chapters .chev{width:10px;height:10px;border-right:2px solid #aeb7c4;border-bottom:2px solid #aeb7c4;transform:rotate(-45deg);transition:transform .2s}
 .chapters details[open] .chev{transform:rotate(45deg)}
 
-.carousel{position:relative;overflow:hidden}
-.carousel-track{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth}
-.carousel-track img{flex:0 0 100%;max-height:60vh;width:100%;object-fit:cover;scroll-snap-align:center;border-radius:16px}
-.carousel .nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.35);border:1px solid var(--line,#232c3d);
-  color:#fff;border-radius:999px;width:40px;height:40px;line-height:38px;text-align:center;font-size:22px}
-.carousel .prev{left:10px}
-.carousel .next{right:10px}
-.dots{display:flex;justify-content:center;gap:6px;padding:12px}
-.dots button{width:8px;height:8px;border-radius:999px;border:1px solid var(--line,#232c3d);background:#7c8697;opacity:.5}
-.dots button.active{opacity:1;background:#fff}
+/* ==== Carosello SOLO pagina tesi (#gallery) ==== */
+.thesis-page #gallery .carousel{
+  position:relative; overflow:hidden; border-radius:16px;
+  background:var(--card,#171923); box-shadow:var(--shadow);
+}
+.thesis-page #gallery .carousel-track{
+  display:flex; gap:0;                /* niente buchi tra slide */
+  overflow-x:auto; scroll-snap-type:x mandatory; scroll-behavior:smooth;
+  scrollbar-width:none;
+}
+.thesis-page #gallery .carousel-track::-webkit-scrollbar{ display:none; }
+.thesis-page #gallery .carousel-track img{
+  flex:0 0 100%; width:100%;
+  height:520px; object-fit:contain;   /* immagine intera */
+  background:#0f1420; border-radius:16px; padding:12px;
+  scroll-snap-align:center;
+}
+.thesis-page #gallery .nav{
+  position:absolute; top:50%; transform:translateY(-50%);
+  background:rgba(0,0,0,.45); border:1px solid var(--border);
+  color:#fff; width:44px; height:44px; line-height:42px; text-align:center;
+  border-radius:999px; font-size:22px; cursor:pointer;
+}
+.thesis-page #gallery .prev{ left:12px; }
+.thesis-page #gallery .next{ right:12px; }
+.thesis-page #gallery .dots{ display:flex; justify-content:center; gap:6px; padding:12px; }
+.thesis-page #gallery .dots button{ width:8px; height:8px; border-radius:999px; border:0; opacity:.4; background:#cbd5e1; }
+.thesis-page #gallery .dots button.active{ opacity:1; background:#fff; }
+
+@media (max-width:900px){
+  .thesis-page #gallery .carousel-track img{ height:360px; padding:8px; }
+}
+@media (max-width:520px){
+  .thesis-page #gallery .carousel-track img{ height:300px; }
+}
 
 .pdf-viewer iframe{width:100%;height:82vh;border:0;border-radius:12px}
 .small{font-size:.9rem}.muted{color:#aeb7c4}
