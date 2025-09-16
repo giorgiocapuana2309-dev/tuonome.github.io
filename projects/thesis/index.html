@@ -179,12 +179,18 @@
     </div>
   </section>
 
-    <!-- CERTIFICATO (viewer) -->
     <section class="section" id="certificate">
       <div class="container">
         <h2>Certificato di Internship</h2>
+    
         <div class="pdf-viewer card">
-          <iframe src="certificate.pdf#zoom=page-width" title="Certificato di internship" loading="lazy"></iframe>
+          <iframe class="pdf"
+            src="certificate.pdf#toolbar=0&navpanes=0&view=FitH&zoom=page-width"
+            title="Certificato di internship"
+            loading="lazy"
+            sandbox="allow-same-origin"
+            oncontextmenu="return false">
+          </iframe>
         </div>
       </div>
     </section>
