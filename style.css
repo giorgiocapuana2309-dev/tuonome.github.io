@@ -403,3 +403,14 @@ select#lang::-ms-expand,
 @media (max-width:600px){
   .pdf-viewer .pdf{ height:65vh; min-height:420px; }
 }
+
+/* Layout 2 colonne SOLO nella pagina tesi */
+.thesis-page .thesis-two{
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr; /* main | aside */
+  gap: 1rem;
+  align-items: start;
+}
+@media (max-width: 900px){
+  .thesis-page .thesis-two{ grid-template-columns: 1fr; }
+}
