@@ -156,16 +156,21 @@
       </div>
     </section>
 
-    <!-- CAROSELLO AUTO 1..N -->
-    <section class="section" id="gallery">
-      <div class="container">
-        <h2>Galleria</h2>
-        <div class="carousel card" data-count="5" data-path="./" data-ext="jpg">
-          <button class="nav prev" aria-label="Precedente">‹</button>
-          <div class="carousel-track" id="thesis-carousel"></div>
-          <button class="nav next" aria-label="Successiva">›</button>
-          <div class="dots" id="thesis-dots"></div>
+    <section class="gallery" id="thesis-gallery">
+      <h2>Galleria</h2>
+      <div class="carousel">
+        <button class="carousel-btn prev" aria-label="Slide precedente">&#10094;</button>
+        <div class="carousel-track-container">
+          <ul class="carousel-track">
+            <li class="carousel-slide"><img src="./1.jpg" alt="Slide 1" loading="lazy" draggable="false"></li>
+            <li class="carousel-slide"><img src="./2.jpg" alt="Slide 2" loading="lazy" draggable="false"></li>
+            <li class="carousel-slide"><img src="./3.jpg" alt="Slide 3" loading="lazy" draggable="false"></li>
+            <li class="carousel-slide"><img src="./4.jpg" alt="Slide 4" loading="lazy" draggable="false"></li>
+            <li class="carousel-slide"><img src="./5.jpg" alt="Slide 5" loading="lazy" draggable="false"></li>
+            <li class="carousel-slide"><img src="./6.jpg" alt="Slide 6" loading="lazy" draggable="false"></li>
+          </ul>
         </div>
+        <button class="carousel-btn next" aria-label="Slide successiva">&#10095;</button>
       </div>
     </section>
 
