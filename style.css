@@ -193,3 +193,18 @@ select#lang::-ms-expand,
   #thesis-gallery .carousel-slide img{ max-height: 320px; }
   #thesis-gallery .carousel-btn{ width: 40px; height: 40px; font-size: 22px; }
 }
+
+/* PDF viewer grande, leggibile, senza padding della card */
+.pdf-viewer{ padding:0; overflow:hidden; border-radius:12px; }
+.pdf-viewer .pdf{
+  display:block; width:100%;
+  height:85vh; min-height:600px;  /* desktop */
+  border:0;
+  border-radius:12px;
+}
+@media (max-width:900px){
+  .pdf-viewer .pdf{ height:75vh; min-height:520px; }
+}
+@media (max-width:600px){
+  .pdf-viewer .pdf{ height:65vh; min-height:420px; }
+}
