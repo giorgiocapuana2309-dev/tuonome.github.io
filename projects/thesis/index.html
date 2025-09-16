@@ -11,27 +11,30 @@
 
 <body class="theme-dark thesis-page">
   <!-- NAVBAR -->
-  <header class="topbar navbar">
-    <div class="container bar">
-      <a class="brand" href="../../index.html">Giorgio Capuana</a>
+  <header class="site-header">
+  <div class="container">
+    <a class="brand" href="../../index.html">
+      <span class="logo">●</span>
+      <span class="brand-name">Giorgio Capuana</span>
+    </a>
 
-      <nav class="nav" id="main-nav">
-        <a href="../../index.html#about" data-i18n="nav.about">Chi sono</a>
-        <a href="../../index.html#portfolio" data-i18n="nav.portfolio">Portfolio</a>
-        <a href="../../index.html#contact" data-i18n="nav.contact">Contatti</a>
-      </nav>
+    <nav class="nav">
+      <a href="../../index.html#about" data-i18n="nav.about">Chi sono</a>
+      <a href="../../index.html#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+      <a href="../../index.html#languages" data-i18n="nav.languages">Lingue</a>
+      <a href="../../index.html#contact" data-i18n="nav.contact">Contatti</a>
+    </nav>
 
-      <div class="actions">
-        <label for="lang-select" class="sr-only" data-i18n="lang.select_label">Scegli lingua</label>
-        <select id="lang-select" aria-label="Language">
-          <option value="it">IT</option>
-          <option value="en">EN</option>
-          <option value="es">ES</option>
-        </select>
-        <button class="burger" aria-label="Apri menu" aria-controls="main-nav" aria-expanded="false">☰</button>
-      </div>
+    <div class="lang-switch">
+      <label for="lang-select" class="sr-only" data-i18n="lang.select_label">Scegli lingua</label>
+      <select id="lang-select" aria-label="Language">
+        <option value="it">italiano</option>
+        <option value="es">español</option>
+        <option value="en">english</option>
+      </select>
     </div>
-  </header>
+  </div>
+</header>
 
   <main>
     <!-- HERO -->
