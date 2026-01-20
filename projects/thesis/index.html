@@ -1,282 +1,164 @@
 <!doctype html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title data-i18n="thesis.meta.title">Bachelor Thesis & Internship – Assembly method redesign @ Pony S.p.A.</title>
-  <meta name="description" data-i18n="thesis.meta.desc"
-        content="Redesign del processo di assemblaggio con AMR, integrazione MES/BeeComs e valutazione d'investimento presso Pony S.p.A. (Milano).">
-  <link rel="stylesheet" href="../../style.css?v=2">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title data-i18n="thesis.meta.title">
+    Bachelor Thesis – Assembly Method Redesign @ Pony S.p.A.
+  </title>
+
+  <meta name="description"
+        content="Tesi di laurea triennale in Ingegneria Gestionale: redesign del metodo di assemblaggio e integrazione tecnologie Industry 4.0 presso Pony S.p.A." />
+
+  <link rel="stylesheet" href="../../style.css" />
+
+  <style>
+    /* === CAROUSEL (stile modello) === */
+    .carousel{position:relative;max-width:700px;margin:1.5rem auto;overflow:hidden;border-radius:10px}
+    .carousel-track-container{overflow:hidden;width:100%}
+    .carousel-track{display:flex;transition:transform .5s ease-in-out}
+    .carousel-slide{min-width:100%;display:flex;justify-content:center}
+    .carousel-slide img{width:80%;max-height:350px;object-fit:contain;border-radius:8px}
+    .carousel-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.5);border:0;color:#fff;
+      font-size:2rem;padding:.3rem .8rem;cursor:pointer;border-radius:50%;z-index:10}
+    .carousel-btn.prev{left:10px}
+    .carousel-btn.next{right:10px}
+    @media (max-width:640px){
+      .carousel-slide img{max-height:280px;width:90%}
+    }
+
+    /* === CTA finale === */
+    .section-cta{margin-top:2.5rem;padding:2rem 0;border-top:1px solid var(--border,#e5e7eb)}
+    .cta-actions{display:flex;gap:.75rem;flex-wrap:wrap}
+    .btn.btn-primary{background:var(--primary,#2563eb)!important;color:#fff!important}
+    .btn.btn-dark{background:#111!important;color:#fff!important}
+
+    /* Navbar helper */
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0)}
+  </style>
 </head>
 
-<body class="theme-dark thesis-page">
-  <!-- NAVBAR -->
-  <header class="site-header">
-  <div class="container">
-    <a class="brand" href="../../index.html">
-      <span class="logo">●</span>
-      <span class="brand-name">Giorgio Capuana</span>
+<body>
+
+<!-- NAVBAR -->
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="../../index.html" class="brand">
+      <span class="dot"></span> Giorgio Capuana
     </a>
 
-    <nav class="nav">
+    <nav class="main-nav">
       <a href="../../index.html#about" data-i18n="nav.about">Chi sono</a>
       <a href="../../index.html#portfolio" data-i18n="nav.portfolio">Portfolio</a>
       <a href="../../index.html#languages" data-i18n="nav.languages">Lingue</a>
       <a href="../../index.html#contact" data-i18n="nav.contact">Contatti</a>
     </nav>
 
-    <div class="lang-switch">
-      <label for="lang-select" class="sr-only" data-i18n="lang.select_label">Scegli lingua</label>
-      <select id="lang-select" aria-label="Language">
-        <option value="it">italiano</option>
-        <option value="es">español</option>
-        <option value="en">english</option>
+    <div class="lang">
+      <label for="lang" class="sr-only">Lingua</label>
+      <select id="lang" class="lang-select">
+        <option value="it">Italiano</option>
+        <option value="es">Español</option>
+        <option value="en">English</option>
       </select>
     </div>
   </div>
 </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="section hero">
-      <div class="container">
-        <h1 data-i18n="thesis.hero.title">Bachelor Thesis & Pre-graduating Internship – Pony S.p.A. (Milano)</h1>
-        <p class="lead" data-i18n="thesis.hero.lead">
-          3 mesi di <strong>internship</strong> + 5 mesi di <strong>mentoring on-the-job</strong>.
-          Redesign dell’assemblaggio (da posto fisso a linea) con <strong>AMR Agilox</strong>,
-          integrazione <strong>MES</strong> e <strong>BeeComs</strong> per la geolocalizzazione,
-          e valutazione economico-finanziaria dell’investimento.
-        </p>
-        <div class="meta chips">
-          <span>2022–23</span><span>Ingegneria Gestionale (BSc)</span><span>Industry 4.0</span>
-        </div>
+<main class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>
+      Bachelor Thesis – Assembly Method Redesign @ Pony S.p.A.
+    </h1>
+    <p class="lead">
+      Tesi di laurea triennale in <strong>Ingegneria Gestionale</strong> focalizzata
+      sulla riprogettazione del metodo di assemblaggio e sull’introduzione di
+      soluzioni <strong>Industry 4.0</strong> in ambito manifatturiero.
+    </p>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery">
+    <h2>Preview immagini</h2>
+
+    <div class="carousel">
+      <button class="carousel-btn prev" aria-label="Slide precedente">&#10094;</button>
+
+      <div class="carousel-track-container">
+        <ul class="carousel-track">
+          <li class="carousel-slide"><img src="img/1.jpg" alt="Layout AS-IS"></li>
+          <li class="carousel-slide"><img src="img/2.jpg" alt="Analisi flussi"></li>
+          <li class="carousel-slide"><img src="img/3.jpg" alt="Architettura TO-BE"></li>
+          <li class="carousel-slide"><img src="img/4.jpg" alt="Linea di assemblaggio"></li>
+          <li class="carousel-slide"><img src="img/5.jpg" alt="Integrazione digitale"></li>
+          <li class="carousel-slide"><img src="img/6.jpg" alt="Business case"></li>
+        </ul>
       </div>
-    </section>
 
-    <!-- LOGHI -->
-<section class="section logos">
-  <div class="container logo-bar">
-    <figure>
-      <img src="polimi.jpg" alt="Politecnico di Milano">
-      <figcaption>Politecnico di Milano</figcaption>
-    </figure>
-    <span class="sep">×</span>
-    <figure>
-      <img src="pony.jpg" alt="Pony S.p.A.">
-      <figcaption>Pony S.p.A.</figcaption>
-    </figure>
-  </div>
-</section>
-
-    <!-- OVERVIEW & SIDEBAR -->
-  <section class="section">
-    <div class="container thesis-two">
-        <article class="card">
-          <div class="card-body">
-            <h2 data-i18n="thesis.overview.title">Overview</h2>
-            <p data-i18n="thesis.overview.p1">
-              Obiettivo: progettare la “fabbrica automatica” per le presse da stiro, integrando tecnologie 4.0
-              e riprogettando il flusso di assemblaggio per ridurre sprechi e lead time.
-            </p>
-            <ul class="bullets">
-              <li>Analisi interna/esterna del sistema produttivo e dei flussi (AS-IS → TO-BE).</li>
-              <li>Introduzione <strong>MES</strong> e <strong>BeeComs</strong> per logistica in-bound e tracciabilità.</li>
-              <li>Redesign: da <em>fixed-place</em> a linea con <strong>AMR</strong> (Agilox) come trasportatore.</li>
-              <li>Integrazione digitale (AS400 ↔ MES ↔ BeeComs ↔ AMR) e KPI operativi.</li>
-              <li>Valutazione quantitativa dell’investimento (NPV &amp; Payback).</li>
-            </ul>
-          </div>
-        </article>
-
-        <aside class="card">
-          <div class="card-body">
-            <h3 data-i18n="thesis.sidebar.title">Dettagli rapidi</h3>
-            <ul class="kv">
-              <li><span>Azienda</span><span>Pony S.p.A. (Milano)</span></li>
-              <li><span>Periodo</span><span>2022–2023</span></li>
-              <li><span>Ruolo</span><span>Intern / Junior Analyst</span></li>
-              <li><span>Strumenti</span><span>AMR Agilox, MES, BeeComs, AS400, Excel/VBA</span></li>
-            </ul>
-            <a class="btn block" href="thesis.pdf" target="_blank" rel="noopener" data-i18n="thesis.sidebar.cta">Scarica tesi (PDF)</a>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <!-- CAPITOLI -->
-  <section class="section" id="chapters">
-    <div class="container thesis-two">
-        <aside class="card toc sticky">
-          <div class="card-body">
-            <h3>Indice capitoli</h3>
-            <ul>
-              <li><a href="#cap1">1. Analisi AS-IS</a></li>
-              <li><a href="#cap2">2. Requisiti & architettura 4.0</a></li>
-              <li><a href="#cap3">3. Redesign: linea + AMR</a></li>
-              <li><a href="#cap4">4. Integrazione MES / BeeComs / AS400</a></li>
-              <li><a href="#cap5">5. KPI & validazione</a></li>
-              <li><a href="#cap6">6. Business case (NPV, Payback)</a></li>
-            </ul>
-          </div>
-        </aside>
-
-        <article class="card">
-          <div class="card-body chapters">
-            <h2>Capitoli</h2>
-
-            <details id="cap1" open>
-              <summary><span class="chev"></span>1. Analisi AS-IS</summary>
-              <p>Rilievo layout, flussi materiali/WIP/PF, tempi e classificazione prodotti; mappatura sprechi e colli di bottiglia.</p>
-              <ul><li>Metodi: time study, VSM, analisi missioni IGV/AMR.</li></ul>
-            </details>
-
-            <details id="cap2">
-              <summary><span class="chev"></span>2. Requisiti & architettura 4.0</summary>
-              <p>Definizione requisiti funzionali e dati; architettura target con geolocalizzazione <strong>BeeComs</strong> e <strong>MES</strong>.</p>
-            </details>
-
-            <details id="cap3">
-              <summary><span class="chev"></span>3. Redesign: linea + AMR</summary>
-              <p>Passaggio da <em>fixed-place</em> a linea/celle con <strong>AMR Agilox</strong> come trasportatore; algoritmo di priorità missioni.</p>
-            </details>
-
-            <details id="cap4">
-              <summary><span class="chev"></span>4. Integrazione MES / BeeComs / AS400</summary>
-              <p>Flussi informativi e interfacing (AS400 ↔ MES ↔ BeeComs ↔ AMR) per tracciabilità e scheduling.</p>
-            </details>
-
-            <details id="cap5">
-              <summary><span class="chev"></span>5. KPI & validazione</summary>
-              <p>Definizione KPI operativi; confronto AS-IS vs TO-BE e validazione su casi d’uso.</p>
-            </details>
-
-            <details id="cap6">
-              <summary><span class="chev"></span>6. Business case (NPV, Payback)</summary>
-              <p>Assunzioni, costi/benefici, calcolo <strong>NPV</strong> e <strong>Payback</strong>; analisi di sensitività.</p>
-            </details>
-          </div>
-        </article>
-      </div>
-    </section>
-
-<section class="section" id="thesis-gallery">
-    <div class="container">
-      <h2>Preview immagini</h2>
-      <div class="carousel">
-        <button class="carousel-btn prev" aria-label="Slide precedente">&#10094;</button>
-        <div class="carousel-track-container">
-          <ul class="carousel-track">
-            <li class="carousel-slide"><img src="./1.jpg" alt="Slide 1" loading="lazy" draggable="false"></li>
-            <li class="carousel-slide"><img src="./2.jpg" alt="Slide 2" loading="lazy" draggable="false"></li>
-            <li class="carousel-slide"><img src="./3.jpg" alt="Slide 3" loading="lazy" draggable="false"></li>
-            <li class="carousel-slide"><img src="./4.jpg" alt="Slide 4" loading="lazy" draggable="false"></li>
-            <li class="carousel-slide"><img src="./5.jpg" alt="Slide 5" loading="lazy" draggable="false"></li>
-            <li class="carousel-slide"><img src="./6.jpg" alt="Slide 6" loading="lazy" draggable="false"></li>
-          </ul>
-        </div>
-        <button class="carousel-btn next" aria-label="Slide successiva">&#10095;</button>
-      </div>
+      <button class="carousel-btn next" aria-label="Slide successiva">&#10095;</button>
     </div>
   </section>
 
-    <section class="section" id="certificate">
-      <div class="container">
-        <h2>Certificato di Internship</h2>
-    
-        <div class="pdf-viewer card">
-          <iframe class="pdf"
-            src="certificate.pdf#toolbar=0&navpanes=0&view=FitH&zoom=page-width"
-            title="Certificato di internship"
-            loading="lazy"
-            oncontextmenu="return false">
-          </iframe>
-        </div>
-      </div>
-    </section>
+  <!-- DESCRIZIONE -->
+  <section class="card">
+    <h2>Descrizione della tesi</h2>
+    <p>
+      Il lavoro di tesi è stato svolto presso <strong>Pony S.p.A. (Milano)</strong>
+      e ha avuto come obiettivo la progettazione di un nuovo sistema di assemblaggio,
+      passando da una configurazione a posto fisso a una linea strutturata,
+      supportata da strumenti digitali e automazione.
+    </p>
 
-    <!-- EXPERIENCE & METHOD -->
-    <section class="section">
-      <div class="container thesis-two">
-        <article class="card">
-          <div class="card-body">
-            <h2 data-i18n="thesis.exp.title">Internship & Mentoring</h2>
-            <p><strong>Internship (3 mesi):</strong> studio layout, flussi materiali/WIP/PF; rilievo tempi e
-              classificazioni prodotto; analisi missioni IGV/AMR.</p>
-            <p><strong>Mentoring (5 mesi):</strong> definizione layout a celle e algoritmo di priorità missioni;
-              integrazione informativa per scheduling e tracciabilità; set KPI.</p>
-          </div>
-        </article>
+    <ul>
+      <li>Analisi AS-IS di layout, flussi e tempi</li>
+      <li>Progettazione TO-BE orientata alla riduzione di sprechi e lead time</li>
+      <li>Integrazione MES e sistemi di tracciabilità</li>
+      <li>Valutazione economico-finanziaria dell’investimento</li>
+    </ul>
+  </section>
 
-        <article class="card">
-          <div class="card-body">
-            <h2 data-i18n="thesis.method.title">Metodologia</h2>
-            <ul>
-              <li>Analisi AS-IS e progettazione TO-BE con vincoli reali di layout.</li>
-              <li>Integrazione MES↔BeeComs↔AMR per geolocalizzazione (~1 m) e missioni automatiche.</li>
-              <li>Modello parametrico missioni e <em>business case</em> (NPV, Payback).</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </section>
+  <!-- CTA -->
+  <section class="section section-cta">
+    <div class="cta-actions">
+      <a class="btn btn-primary" href="Tesi_triennale.pdf" download>
+        Scarica la tesi (PDF)
+      </a>
+      <a class="btn btn-dark" href="../../index.html">
+        ← Torna al portfolio
+      </a>
+    </div>
+  </section>
 
-    <!-- RISULTATI -->
-    <section class="section">
-      <div class="container">
-        <article class="card">
-          <div class="card-body">
-            <h2 data-i18n="thesis.results.title">Risultati principali</h2>
-            <ul class="bullets">
-              <li>Linea ibrida a celle (tempi decrescenti) con AMR come trasportatore.</li>
-              <li>Missioni prioritarie standardizzate (picking telai/materiali, collaudo, stock/linea).</li>
-              <li>NPV positivo e payback pluriennale (dettagli nella tesi).</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
+</main>
 
-  <footer class="footer"><div class="container">© Giorgio Capuana</div></footer>
+<script>
+  const track = document.querySelector('.carousel-track');
+  const slides = Array.from(track.children);
+  const nextButton = document.querySelector('.carousel-btn.next');
+  const prevButton = document.querySelector('.carousel-btn.prev');
 
+  let currentIndex = 0;
+  function updateSlidePosition(){
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    track.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+  }
 
-  <script>
-  // Carosello classico per #thesis-gallery
-  (function(){
-    const root   = document.querySelector('#thesis-gallery');
-    if(!root) return;
-  
-    const track  = root.querySelector('.carousel-track');
-    const slides = Array.from(track.children);
-    const prev   = root.querySelector('.carousel-btn.prev');
-    const next   = root.querySelector('.carousel-btn.next');
-  
-    // safety: reset del <ul>
-    track.style.listStyle = 'none';
-    track.style.margin = '0';
-    track.style.padding = '0';
-  
-    let index = 0;
-    function go(i){
-      index = (i + slides.length) % slides.length;
-      track.style.transform = `translateX(-${index * 100}%)`;
-    }
-  
-    prev.addEventListener('click', () => go(index - 1));
-    next.addEventListener('click', () => go(index + 1));
-  
-    // swipe touch
-    let startX = 0;
-    track.addEventListener('touchstart', e => startX = e.touches[0].clientX, {passive:true});
-    track.addEventListener('touchend',   e => {
-      const dx = e.changedTouches[0].clientX - startX;
-      if (Math.abs(dx) > 40) go(index + (dx < 0 ? 1 : -1));
-    });
-  
-    go(0);
-  })();
-  </script>
-</body>
-</html>
+  nextButton.addEventListener('click', ()=>{
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateSlidePosition();
+  });
+
+  prevButton.addEventListener('click', ()=>{
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateSlidePosition();
+  });
+
+  window.addEventListener('resize', updateSlidePosition);
+  updateSlidePosition();
+</script>
+
 </body>
 </html>
