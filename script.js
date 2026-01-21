@@ -40,7 +40,7 @@ const I18N = {
     "proj.d.title": "Report di Sostenibilità",
     "proj.d.desc": "Framework GRI/CSRD, calcolo GHG e roadmap KPI ESG.",
     
-    // --- Monopattino: IT ---
+// --- Monopattino: IT ---
 "proj.scooter.title": "Studio della dinamica, selezione componenti e disegno di un monopattino elettrico",
 "proj.scooter.desc": "Modello dinamico, dimensionamento powertrain, scelta batteria e telaio; disegni e BOM.",
 "proj.scooter.page_title": "Monopattino elettrico — Dettagli progetto",
@@ -85,9 +85,7 @@ const I18N = {
 "fml.conclusion": "In sintesi: duplicando le stazioni critiche (Robot e poi Front Cover) si ottiene un deciso salto di performance senza spostare il collo di bottiglia, massimizzando il ROI del redesign.",
 "fml.download": "Scarica report (PDF)",
 
-// --- QDA: Topics (IT) ---
-"proj.c.title": "Analisi finanziaria: gruppo Volkswagen in un contesto competitivo",
-"proj.c.desc": "Valutazione economico-finanziaria del gruppo Volkswagen rispetto ai principali concorrenti, con focus su redditività, struttura patrimoniale, cash flow ed efficienza operativa.",
+// --- QDA: IT ---
 "qda.topics.title": "Argomenti trattati",
 "qda.topics.item.desc_stats": "Analisi descrittiva dei dati (media, mediana, moda, varianza, deviazione standard)",
 "qda.topics.item.normality_tests": "Test di normalità (Shapiro–Wilk, Kolmogorov–Smirnov)",
@@ -109,6 +107,8 @@ const I18N = {
 "qda.topics.item.evaluation_interpretation": "Valutazione e interpretazione dei risultati per decisioni di qualità",
 
  // --- vw (IT) ---   
+"proj.c.title": "Analisi finanziaria: gruppo Volkswagen in un contesto competitivo",
+"proj.c.desc": "Valutazione economico-finanziaria del gruppo Volkswagen rispetto ai principali concorrenti, con focus su redditività, struttura patrimoniale, cash flow ed efficienza operativa.",
 "vw.page_title": "Analisi finanziaria: gruppo Volkswagen in un contesto competitivo",
 "vw.lead": "Questa pagina offre l’accesso diretto al report completo in PDF. In seguito potremo aggiungere anteprima, estratti e grafici.",
 "vw.desc_title": "Descrizione del progetto",
@@ -168,24 +168,32 @@ const I18N = {
 "ip.t_i4":"Ambiente internazionale: confronto culturale e metodi di lavoro diversi hanno favorito creatività, problem solving e apprendimento reciproco.",
 "ip.t_i5":"Supervisione e feedback da rappresentanti Prysmian (brief a cura di Ing. Nicola Imbimbo) e faculty PoliMi (Prof. Emilio Bellini, Tutor Alessandro Biffi).",
 
-// --- thesis (IT) ---    
-"proj.thesis.title":"Tesi triennale & Internship – Pony S.p.A.",
-"proj.thesis.desc":"Redesign del metodo di assemblaggio e transizione 4.0 con MES, BeeComs e AMR; analisi economica dell’investimento.",
-"proj.thesis.tag1":"Industry 4.0",
-"proj.thesis.tag2":"Operations",
-"proj.thesis.tag3":"AMR & MES",
-"thesis.meta.title":"Bachelor Thesis & Internship – Assembly method redesign @ Pony S.p.A.",
-"thesis.meta.desc":"Redesign assemblaggio con AMR, integrazione MES/BeeComs e business case presso Pony S.p.A. (Milano).",
-"thesis.hero.title":"Bachelor Thesis & Pre-graduating Internship – Pony S.p.A. (Milano)",
-"thesis.hero.lead":"3 mesi di internship + 5 mesi di mentoring; redesign dell’assemblaggio con AMR Agilox, integrazione MES/BeeComs e valutazione economica.",
-"thesis.overview.title":"Overview",
-"thesis.sidebar.title":"Dettagli rapidi",
-"thesis.sidebar.cta":"Scarica tesi (PDF)",
-"thesis.exp.title":"Internship & Mentoring",
-"thesis.method.title":"Metodologia",
-"thesis.results.title":"Risultati principali",
-"thesis.gallery.title":"Highlight visivi",
-"thesis.conclusion.title":"Conclusioni & Learnings",
+// --- Thesis (IT) ---
+"thesis.desc.title": "Descrizione della tesi",
+"thesis.desc.p1":
+"Tesi di laurea triennale in Ingegneria Gestionale sviluppata presso Pony S.p.A. (Milano), azienda manifatturiera attiva nella produzione di presse da stiro professionali.",
+"thesis.desc.p2":
+"Il progetto ha avuto come obiettivo la riprogettazione del metodo di assemblaggio di una famiglia di prodotti, affrontando il passaggio da un sistema fixed-position assembly a una linea strutturata e digitalmente integrata, in un contesto di trasformazione Industry 4.0.",
+"thesis.activities.title": "Attività principali",
+"thesis.activities.i1":
+"Analisi AS-IS del layout produttivo, dei flussi di materiale, WIP e prodotto finito, con rilievi tempi e identificazione dei colli di bottiglia.",
+"thesis.activities.i2":
+"Progettazione TO-BE del sistema di assemblaggio, introducendo una logica di linea e la separazione delle fasi a valore aggiunto.",
+"thesis.activities.i3":
+"Definizione dei flussi informativi e logistici per l’integrazione di AMR/AGV come supporto alla logistica interna.",
+"thesis.activities.i4":
+"Supporto all’integrazione di sistemi MES e soluzioni di geolocalizzazione industriale (BeeComs) per tracciabilità e controllo operativo.",
+"thesis.analysis.title": "Analisi e validazione",
+"thesis.analysis.i1":
+"Sviluppo di KPI produttivi per il confronto AS-IS vs TO-BE (lead time, saturazione, produttività).",
+"thesis.analysis.i2":
+"Costruzione di un modello di valutazione economico-finanziaria dell’investimento (NPV, Payback Period).",
+"thesis.analysis.i3":
+"Simulazione di diversi scenari operativi e analisi di sensitività.",
+"thesis.output.title": "Output del progetto",
+"thesis.output.i1": "Nuovo layout di assemblaggio orientato alla scalabilità.",
+"thesis.output.i2": "Processi standardizzati e supportati digitalmente.",
+"thesis.output.i3": "Business case a supporto della decisione di investimento.",
     
 "site.title": "Portfolio - Giorgio Capuana",
     "proj.qda.title": "Analisi Statistica dei Dati con Python",
