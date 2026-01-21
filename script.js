@@ -169,6 +169,8 @@ const I18N = {
 "ip.t_i5":"Supervisione e feedback da rappresentanti Prysmian (brief a cura di Ing. Nicola Imbimbo) e faculty PoliMi (Prof. Emilio Bellini, Tutor Alessandro Biffi).",
 
 // --- Thesis (IT) ---
+"proj.thesis.desc":
+"Redesign del metodo di assemblaggio e transizione 4.0: integrazione <strong>MES</strong>, geolocalizzazione <strong>BeeComs</strong> e <strong>AMR Agilox</strong>; analisi economica dell’investimento e KPI operativi.",    
 "thesis.meta.title": "Bachelor Thesis – Assembly Method Redesign @ Pony S.p.A.",
 "thesis.meta.desc": "Tesi di laurea triennale in Ingegneria Gestionale: redesign del metodo di assemblaggio e integrazione tecnologie Industry 4.0 presso Pony S.p.A.",
 "thesis.hero.title": "Bachelor Thesis – Assembly Method Redesign @ Pony S.p.A.",
@@ -407,6 +409,8 @@ const I18N = {
 "ip.t_i5":"Supervisión y feedback de representantes de Prysmian (brief por Ing. Nicola Imbimbo) y faculty de PoliMi (Prof. Emilio Bellini, Tutor Alessandro Biffi).",
 
 // --- Thesis (ES) ---
+"proj.thesis.desc":
+"Rediseño del método de ensamblaje y transición Industria 4.0: integración de <strong>MES</strong>, geolocalización <strong>BeeComs</strong> y <strong>AMR Agilox</strong>; análisis económico de la inversión y KPIs operativos.",
 "thesis.meta.title": "Bachelor Thesis – Assembly Method Redesign @ Pony S.p.A.",
 "thesis.meta.desc":
 "Tesis de grado en Ingeniería de Gestión centrada en el rediseño del método de ensamblaje y la integración de tecnologías Industria 4.0 en Pony S.p.A.",
@@ -647,6 +651,8 @@ const I18N = {
 "ip.t_i5":"Supervision and feedback from Prysmian representatives (brief by Eng. Nicola Imbimbo) and PoliMi faculty (Prof. Emilio Bellini, Tutor Alessandro Biffi).",
 
 // --- Thesis (EN) ---
+"proj.thesis.desc":
+"Assembly method redesign and Industry 4.0 transition: integration of <strong>MES</strong>, <strong>BeeComs</strong> industrial geolocation and <strong>Agilox AMR</strong>; investment economic analysis and operational KPIs.",    
 "thesis.meta.title": "Bachelor Thesis – Assembly Method Redesign @ Pony S.p.A.",
 "thesis.meta.desc":
 "Bachelor’s thesis in Management Engineering focused on assembly method redesign and Industry 4.0 technology integration at Pony S.p.A.",
