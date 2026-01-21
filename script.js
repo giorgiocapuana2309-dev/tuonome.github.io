@@ -86,6 +86,8 @@ const I18N = {
 "fml.download": "Scarica report (PDF)",
 
 // --- QDA: IT ---
+"proj.qda.title": "Analisi Statistica dei Dati con Python",
+"proj.qda.desc": "Questo progetto spiega tecniche di analisi statistica applicata alla qualità, usando Python per gestire e modellare i dati.",    
 "qda.topics.title": "Argomenti trattati",
 "qda.topics.item.desc_stats": "Analisi descrittiva dei dati (media, mediana, moda, varianza, deviazione standard)",
 "qda.topics.item.normality_tests": "Test di normalità (Shapiro–Wilk, Kolmogorov–Smirnov)",
@@ -105,6 +107,8 @@ const I18N = {
 "qda.topics.item.outliers_missing": "Rilevamento outlier e gestione dei dati mancanti",
 "qda.topics.item.multivariate_analysis": "Analisi statistica multivariata (ACP, clustering)",
 "qda.topics.item.evaluation_interpretation": "Valutazione e interpretazione dei risultati per decisioni di qualità",
+"proj.qda.download": "Scarica PDF",
+"common.back": "← Torna al portfolio",
 
  // --- vw (IT) ---   
 "proj.c.title": "Analisi finanziaria: gruppo Volkswagen in un contesto competitivo",
@@ -204,12 +208,7 @@ const I18N = {
 "thesis.output.i3": "Business case a supporto della decisione di investimento.",
 "thesis.download": "Scarica la tesi (PDF)",
   
-"site.title": "Portfolio - Giorgio Capuana",
-    "proj.qda.title": "Analisi Statistica dei Dati con Python",
-    "proj.qda.desc": "Questo progetto spiega tecniche di analisi statistica applicata alla qualità, usando Python per gestire e modellare i dati.",
-    "proj.qda.download": "Scarica PDF",
-    "common.back": "← Torna al portfolio",
-  
+"site.title": "Portfolio - Giorgio Capuana",  
     "proj.details": "Dettagli",
     "lang.title": "Lingue",
     "lang.body": "Ho una forte passione per le lingue e la comunicazione interculturale. Oltre all'italiano, parlo <strong>spagnolo</strong> e <strong>inglese</strong> a livello avanzato (C1). Nel breve periodo inizierò a studiare <strong>francese</strong>.",
@@ -326,6 +325,8 @@ const I18N = {
 "fml.download": "Descargar informe (PDF)",
 
 // --- QDA: Topics (ES) ---
+"proj.qda.title": "Análisis Estadístico de Datos con Python",
+"proj.qda.desc": "Este proyecto explica técnicas de análisis estadístico aplicadas a la calidad, usando Python para gestionar y modelar los datos.",
 "qda.topics.title": "Temas tratados",
 "qda.topics.item.desc_stats": "Análisis descriptivo de datos (media, mediana, moda, varianza, desviación estándar)",
 "qda.topics.item.normality_tests": "Pruebas de normalidad (Shapiro–Wilk, Kolmogórov–Smirnov)",
@@ -345,6 +346,8 @@ const I18N = {
 "qda.topics.item.outliers_missing": "Detección de outliers y gestión de datos faltantes",
 "qda.topics.item.multivariate_analysis": "Análisis estadístico multivariante (ACP/PCA, clustering)",
 "qda.topics.item.evaluation_interpretation": "Evaluación e interpretación de resultados para decisiones de calidad",
+"proj.qda.download": "Descargar PDF",
+"common.back": "← Volver al portafolio",
 
  // --- vw (ES) ---
 "proj.c.title": "Análisis financiero: Grupo Volkswagen en un contexto competitivo",
@@ -446,11 +449,6 @@ const I18N = {
 "thesis.download": "Descargar tesis (PDF)",
     
 "site.title": "Portafolio - Giorgio Capuana",
-    "proj.qda.title": "Análisis Estadístico de Datos con Python",
-    "proj.qda.desc": "Este proyecto explica técnicas de análisis estadístico aplicadas a la calidad, usando Python para gestionar y modelar los datos.",
-    "proj.qda.download": "Descargar PDF",
-    "common.back": "← Volver al portafolio",
-    
     "proj.details": "Detalles",
     "lang.title": "Idiomas",
     "lang.body": "Me apasionan los idiomas y la comunicación intercultural. Además del italiano, hablo <strong>español</strong> e <strong>inglés</strong> a nivel avanzado (C1). Empezaré a estudiar <strong>francés</strong> en el corto plazo.",
@@ -568,6 +566,8 @@ const I18N = {
 "fml.download": "Download report (PDF)",
 
 // --- QDA: Topics (EN) ---
+"proj.qda.title": "Statistical Data Analysis with Python",
+"proj.qda.desc": "This project explains statistical data analysis techniques applied to quality, using Python for data management and modeling.",
 "qda.topics.title": "Topics covered",
 "qda.topics.item.desc_stats": "Descriptive statistics (mean, median, mode, variance, standard deviation)",
 "qda.topics.item.normality_tests": "Normality tests (Shapiro–Wilk, Kolmogorov–Smirnov)",
@@ -587,7 +587,9 @@ const I18N = {
 "qda.topics.item.outliers_missing": "Outlier detection and missing-data handling",
 "qda.topics.item.multivariate_analysis": "Multivariate statistical analysis (PCA, clustering)",
 "qda.topics.item.evaluation_interpretation": "Evaluation and interpretation of results for quality decisions",
-
+"proj.qda.download": "Download PDF",
+"common.back": "← Back to portfolio",
+    
 // --- vw (EN) ---
 "proj.c.title": "Financial analysis: Volkswagen Group in a competitive context",
 "proj.c.desc": "Economic–financial assessment of Volkswagen Group versus key competitors, focusing on profitability, balance-sheet structure, cash flow and operating efficiency.",
@@ -688,12 +690,7 @@ const I18N = {
 "thesis.download": "Download thesis (PDF)",
 
     
-    "site.title": "Portfolio - Giorgio Capuana",
-    "proj.qda.title": "Statistical Data Analysis with Python",
-    "proj.qda.desc": "This project explains statistical data analysis techniques applied to quality, using Python for data management and modeling.",
-    "proj.qda.download": "Download PDF",
-    "common.back": "← Back to portfolio",
-  
+"site.title": "Portfolio - Giorgio Capuana",
     "proj.details": "Details",
     "lang.title": "Languages",
     "lang.body": "I’m passionate about languages and intercultural communication. Besides Italian, I speak <strong>Spanish</strong> and <strong>English</strong> at an advanced (C1) level. I plan to start studying <strong>French</strong> soon.",
