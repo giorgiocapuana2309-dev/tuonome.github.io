@@ -87,7 +87,7 @@ const I18N = {
 
 // --- QDA: IT ---
 "proj.qda.title": "Analisi Statistica dei Dati con Python",
-"proj.qda.desc": "Questo progetto spiega tecniche di analisi statistica applicata alla qualità, usando Python per gestire e modellare i dati.",    
+"proj.qda.desc": "Raccolta personale di teoria, appunti operativi e codici Python sviluppati per condurre analisi statistiche, controllo qualità e introdurre modelli di machine learning sui dati.",    
 "qda.topics.title": "Argomenti trattati",
 "qda.topics.item.desc_stats": "Analisi descrittiva dei dati (media, mediana, moda, varianza, deviazione standard)",
 "qda.topics.item.normality_tests": "Test di normalità (Shapiro–Wilk, Kolmogorov–Smirnov)",
@@ -546,7 +546,7 @@ const I18N = {
 "proj.scooter.specs.traction":"Traction limit (est.)","proj.scooter.specs.traction_val":"≈ 1.7 m/s²",
 "proj.scooter.specs.antitip":"Anti-tip slope","proj.scooter.specs.antitip_val":"≈ 49.9%",
 
-    // --- FML: EN --
+// --- FML: EN --
 "common.back": "← Back to portfolio",
 "fml.page_title": "Flexible Manufacturing Line — Project details",
 "fml.page_desc": "AS-IS model in Simulink, statistical analysis in MATLAB, bottleneck, TO-BE and availability.",
@@ -567,7 +567,7 @@ const I18N = {
 
 // --- QDA: Topics (EN) ---
 "proj.qda.title": "Statistical Data Analysis with Python",
-"proj.qda.desc": "This project explains statistical data analysis techniques applied to quality, using Python for data management and modeling.",
+"proj.qda.desc": "Personal collection of theory notes, operational guidelines and Python scripts developed to perform statistical analysis, quality control and introduce machine learning models on data.",
 "qda.topics.title": "Topics covered",
 "qda.topics.item.desc_stats": "Descriptive statistics (mean, median, mode, variance, standard deviation)",
 "qda.topics.item.normality_tests": "Normality tests (Shapiro–Wilk, Kolmogorov–Smirnov)",
