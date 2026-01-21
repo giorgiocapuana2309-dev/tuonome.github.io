@@ -169,32 +169,39 @@ const I18N = {
 "ip.t_i5":"Supervisione e feedback da rappresentanti Prysmian (brief a cura di Ing. Nicola Imbimbo) e faculty PoliMi (Prof. Emilio Bellini, Tutor Alessandro Biffi).",
 
 // --- Thesis (IT) ---
+"thesis.meta.title": "Bachelor Thesis – Assembly Method Redesign @ Pony S.p.A.",
+"thesis.meta.desc": "Tesi di laurea triennale in Ingegneria Gestionale: redesign del metodo di assemblaggio e integrazione tecnologie Industry 4.0 presso Pony S.p.A.",
+"thesis.hero.title": "Bachelor Thesis – Assembly Method Redesign @ Pony S.p.A.",
+"thesis.hero.lead":
+"Tesi di laurea triennale in <strong>Ingegneria Gestionale</strong> focalizzata sulla riprogettazione del metodo di assemblaggio e sull’introduzione di soluzioni <strong>Industry 4.0</strong> in ambito manifatturiero.",
+"thesis.gallery.title": "Preview immagini",
 "thesis.desc.title": "Descrizione della tesi",
 "thesis.desc.p1":
-"Tesi di laurea triennale in Ingegneria Gestionale sviluppata presso Pony S.p.A. (Milano), azienda manifatturiera attiva nella produzione di presse da stiro professionali.",
+"Tesi di laurea triennale in <strong>Ingegneria Gestionale</strong> sviluppata presso <strong>Pony S.p.A. (Milano)</strong>, azienda manifatturiera attiva nella produzione di presse da stiro professionali.",
 "thesis.desc.p2":
-"Il progetto ha avuto come obiettivo la riprogettazione del metodo di assemblaggio di una famiglia di prodotti, affrontando il passaggio da un sistema fixed-position assembly a una linea strutturata e digitalmente integrata, in un contesto di trasformazione Industry 4.0.",
+"Il progetto ha avuto come obiettivo la <strong>riprogettazione del metodo di assemblaggio</strong> di una famiglia di prodotti, affrontando il passaggio da un sistema <em>fixed-position assembly</em> a una <strong>linea strutturata e digitalmente integrata</strong>, in un contesto di trasformazione <strong>Industry 4.0</strong>.",
 "thesis.activities.title": "Attività principali",
 "thesis.activities.i1":
-"Analisi AS-IS del layout produttivo, dei flussi di materiale, WIP e prodotto finito, con rilievi tempi e identificazione dei colli di bottiglia.",
+"Analisi <strong>AS-IS</strong> del layout produttivo, dei flussi di materiale, WIP e prodotto finito, con rilievi tempi e identificazione di colli di bottiglia.",
 "thesis.activities.i2":
-"Progettazione TO-BE del sistema di assemblaggio, introducendo una logica di linea e la separazione delle fasi a valore aggiunto.",
+"Progettazione <strong>TO-BE</strong> del sistema di assemblaggio, introducendo una logica di linea e la separazione delle fasi a valore aggiunto.",
 "thesis.activities.i3":
-"Definizione dei flussi informativi e logistici per l’integrazione di AMR/AGV come supporto alla logistica interna.",
+"Definizione dei flussi informativi e logistici per l’integrazione di <strong>AMR/AGV</strong> come supporto alla logistica interna.",
 "thesis.activities.i4":
-"Supporto all’integrazione di sistemi MES e soluzioni di geolocalizzazione industriale (BeeComs) per tracciabilità e controllo operativo.",
+"Supporto all’integrazione di sistemi <strong>MES</strong> e soluzioni di <strong>geolocalizzazione industriale (BeeComs)</strong> per tracciabilità e controllo operativo.",
 "thesis.analysis.title": "Analisi e validazione",
 "thesis.analysis.i1":
-"Sviluppo di KPI produttivi per il confronto AS-IS vs TO-BE (lead time, saturazione, produttività).",
+"Sviluppo di <strong>KPI produttivi</strong> per il confronto AS-IS vs TO-BE (lead time, saturazione, produttività).",
 "thesis.analysis.i2":
-"Costruzione di un modello di valutazione economico-finanziaria dell’investimento (NPV, Payback Period).",
+"Costruzione di un <strong>modello di valutazione economico-finanziaria</strong> dell’investimento (NPV, Payback Period).",
 "thesis.analysis.i3":
 "Simulazione di diversi scenari operativi e analisi di sensitività.",
 "thesis.output.title": "Output del progetto",
 "thesis.output.i1": "Nuovo layout di assemblaggio orientato alla scalabilità.",
 "thesis.output.i2": "Processi standardizzati e supportati digitalmente.",
 "thesis.output.i3": "Business case a supporto della decisione di investimento.",
-    
+"thesis.download": "Scarica la tesi (PDF)",
+  
 "site.title": "Portfolio - Giorgio Capuana",
     "proj.qda.title": "Analisi Statistica dei Dati con Python",
     "proj.qda.desc": "Questo progetto spiega tecniche di analisi statistica applicata alla qualità, usando Python per gestire e modellare i dati.",
@@ -399,7 +406,40 @@ const I18N = {
 "ip.t_i4":"Entorno internacional: diversidad cultural y de métodos fomentó creatividad, resolución de problemas y aprendizaje mutuo.",
 "ip.t_i5":"Supervisión y feedback de representantes de Prysmian (brief por Ing. Nicola Imbimbo) y faculty de PoliMi (Prof. Emilio Bellini, Tutor Alessandro Biffi).",
 
-
+// --- Thesis (ES) ---
+"thesis.meta.title": "Bachelor Thesis – Assembly Method Redesign @ Pony S.p.A.",
+"thesis.meta.desc":
+"Tesis de grado en Ingeniería de Gestión centrada en el rediseño del método de ensamblaje y la integración de tecnologías Industria 4.0 en Pony S.p.A.",
+"thesis.hero.title": "Bachelor Thesis – Assembly Method Redesign @ Pony S.p.A.",
+"thesis.hero.lead":
+"Tesis de grado en <strong>Ingeniería de Gestión</strong> centrada en el rediseño del método de ensamblaje y en la introducción de soluciones de <strong>Industria 4.0</strong> en un entorno manufacturero.",
+"thesis.gallery.title": "Vista previa de imágenes",
+"thesis.desc.title": "Descripción de la tesis",
+"thesis.desc.p1":
+"Tesis de grado en <strong>Ingeniería de Gestión</strong> desarrollada en <strong>Pony S.p.A. (Milán)</strong>, empresa manufacturera dedicada a la producción de prensas de planchado profesionales.",
+"thesis.desc.p2":
+"El proyecto tuvo como objetivo el <strong>rediseño del método de ensamblaje</strong> de una familia de productos, abordando la transición de un sistema de <em>ensamblaje en posición fija</em> a una <strong>línea estructurada y digitalmente integrada</strong>, en un contexto de transformación de la <strong>Industria 4.0</strong>.",
+"thesis.activities.title": "Actividades principales",
+"thesis.activities.i1":
+"Análisis <strong>AS-IS</strong> del layout productivo, de los flujos de material, WIP y producto terminado, con medición de tiempos e identificación de cuellos de botella.",
+"thesis.activities.i2":
+"Diseño <strong>TO-BE</strong> del sistema de ensamblaje, introduciendo una lógica de línea y la separación de las fases de valor añadido.",
+"thesis.activities.i3":
+"Definición de flujos informativos y logísticos para la integración de sistemas <strong>AMR/AGV</strong> como soporte a la logística interna.",
+"thesis.activities.i4":
+"Soporte a la integración de sistemas <strong>MES</strong> y soluciones de <strong>geolocalización industrial (BeeComs)</strong> para trazabilidad y control operativo.",
+"thesis.analysis.title": "Análisis y validación",
+"thesis.analysis.i1":
+"Desarrollo de <strong>KPIs productivos</strong> para la comparación AS-IS vs TO-BE (lead time, saturación, productividad).",
+"thesis.analysis.i2":
+"Construcción de un <strong>modelo de evaluación económico-financiera</strong> de la inversión (VAN, Payback Period).",
+"thesis.analysis.i3":
+"Simulación de diferentes escenarios operativos y análisis de sensibilidad.",
+"thesis.output.title": "Resultados del proyecto",
+"thesis.output.i1": "Nuevo layout de ensamblaje orientado a la escalabilidad.",
+"thesis.output.i2": "Procesos estandarizados y soportados digitalmente.",
+"thesis.output.i3": "Business case de apoyo a la decisión de inversión.",
+"thesis.download": "Descargar tesis (PDF)",
     
 "site.title": "Portafolio - Giorgio Capuana",
     "proj.qda.title": "Análisis Estadístico de Datos con Python",
@@ -605,6 +645,42 @@ const I18N = {
 "ip.t_i3":"Shift towards situational leadership: from initial debate to alignment on roles and goals through continuous collaboration.",
 "ip.t_i4":"International setting: cultural and methodological diversity boosted creativity, problem-solving and mutual learning.",
 "ip.t_i5":"Supervision and feedback from Prysmian representatives (brief by Eng. Nicola Imbimbo) and PoliMi faculty (Prof. Emilio Bellini, Tutor Alessandro Biffi).",
+
+// --- Thesis (EN) ---
+"thesis.meta.title": "Bachelor Thesis – Assembly Method Redesign @ Pony S.p.A.",
+"thesis.meta.desc":
+"Bachelor’s thesis in Management Engineering focused on assembly method redesign and Industry 4.0 technology integration at Pony S.p.A.",
+"thesis.hero.title": "Bachelor Thesis – Assembly Method Redesign @ Pony S.p.A.",
+"thesis.hero.lead":
+"Bachelor’s thesis in <strong>Management Engineering</strong> focused on the redesign of the assembly method and the introduction of <strong>Industry 4.0</strong> solutions in a manufacturing environment.",
+"thesis.gallery.title": "Image preview",
+"thesis.desc.title": "Thesis description",
+"thesis.desc.p1":
+"Bachelor’s thesis in <strong>Management Engineering</strong> developed at <strong>Pony S.p.A. (Milan)</strong>, a manufacturing company operating in the production of professional ironing presses.",
+"thesis.desc.p2":
+"The project aimed to <strong>redesign the assembly method</strong> of a product family, addressing the transition from a <em>fixed-position assembly</em> system to a <strong>structured and digitally integrated production line</strong>, within an <strong>Industry 4.0</strong> transformation context.",
+"thesis.activities.title": "Main activities",
+"thesis.activities.i1":
+"<strong>AS-IS</strong> analysis of the production layout, material flows, WIP and finished products, including time measurements and bottleneck identification.",
+"thesis.activities.i2":
+"<strong>TO-BE</strong> design of the assembly system, introducing a line-based logic and the separation of value-added phases.",
+"thesis.activities.i3":
+"Definition of information and logistics flows for the integration of <strong>AMR/AGV</strong> systems supporting internal logistics.",
+"thesis.activities.i4":
+"Support for the integration of <strong>MES</strong> systems and <strong>industrial geolocation solutions (BeeComs)</strong> for traceability and operational control.",
+"thesis.analysis.title": "Analysis and validation",
+"thesis.analysis.i1":
+"Development of <strong>production KPIs</strong> to compare AS-IS vs TO-BE scenarios (lead time, utilization, productivity).",
+"thesis.analysis.i2":
+"Development of an <strong>economic and financial investment evaluation model</strong> (NPV, Payback Period).",
+"thesis.analysis.i3":
+"Simulation of different operational scenarios and sensitivity analysis.",
+"thesis.output.title": "Project outputs",
+"thesis.output.i1": "New assembly layout designed for scalability.",
+"thesis.output.i2": "Standardized and digitally supported processes.",
+"thesis.output.i3": "Business case supporting the investment decision.",
+"thesis.download": "Download thesis (PDF)",
+
     
     "site.title": "Portfolio - Giorgio Capuana",
     "proj.qda.title": "Statistical Data Analysis with Python",
